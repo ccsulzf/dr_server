@@ -1,0 +1,313 @@
+[2018-04-09 22:11:55.618] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at F:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-04-09 22:12:07.191] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at F:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-04-09 22:12:47.754] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at F:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:02.974] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:04.643] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:07.358] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:07.639] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:14.131] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:14.367] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:17.837] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-09-18 21:39:18.085] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (i:\DR_workspace\DailyRecord3.0\server\node_modules\koa\lib\context.js:93:11)
+    at i:/DR_workspace/DailyRecord3.0/server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2018-11-11 19:58:17.082] [ERROR] error - TypeError: Cannot read property 'nameOrEmali' of undefined
+    at login (I:/DR_workspace/DailyRecord3.0/server/src/api/controllers/UserController.js:6:32)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:65:19)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:118:63)
+[2018-11-11 19:58:54.347] [ERROR] error - TypeError: Cannot read property 'nameOrEmali' of undefined
+    at login (I:/DR_workspace/DailyRecord3.0/server/src/api/controllers/UserController.js:6:32)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:65:19)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:118:63)
+[2018-11-11 19:59:26.739] [ERROR] error - TypeError: Cannot read property 'nameOrEmali' of undefined
+    at login (I:/DR_workspace/DailyRecord3.0/server/src/api/controllers/UserController.js:6:32)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:65:19)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:118:63)
+[2018-11-11 20:00:08.644] [ERROR] error - TypeError: Cannot read property 'nameOrEmali' of undefined
+    at login (I:/DR_workspace/DailyRecord3.0/server/src/api/controllers/UserController.js:6:32)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:65:19)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:118:63)
+[2018-11-11 20:04:28.749] [ERROR] error - ReferenceError: User is not defined
+    at UserService.login (I:/DR_workspace/DailyRecord3.0/server/src/api/services/UserService.js:10:20)
+    at login (I:/DR_workspace/DailyRecord3.0/server/src/api/controllers/UserController.js:8:40)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\DR_workspace\DailyRecord3.0\server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:65:19)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\DR_workspace\DailyRecord3.0\server\node_modules\co\index.js:50:10)
+[2018-11-11 20:05:23.587] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.formatError (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'name\' in \'field list\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.Sequence._packetToError (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+    --------------------
+    at Protocol._enqueue (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'name\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.Sequence._packetToError (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+    --------------------
+    at Protocol._enqueue (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'name\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' },
+  sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' }
+[2018-11-11 20:06:39.989] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.formatError (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'name\' in \'field list\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.Sequence._packetToError (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+    --------------------
+    at Protocol._enqueue (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'name\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.Sequence._packetToError (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+    --------------------
+    at Protocol._enqueue (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\DR_workspace\DailyRecord3.0\server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\DR_workspace\DailyRecord3.0\server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\DR_workspace\DailyRecord3.0\server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\DR_workspace\DailyRecord3.0\server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'name\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' },
+  sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' }

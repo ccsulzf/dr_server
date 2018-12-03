@@ -1,0 +1,9 @@
+/node_modules
+/*.log
+/log/*.log
+/.idea
+/build
+/*-compiled.js
+/*-compiled.js.map
+*-compiled.js
+*-compiled.js.map
