@@ -7,7 +7,7 @@ export class UserService {
     }
 
     async login(nameOrEmali, password) {
-        let data = await user.find({
+        let data = await User.find({
             where: {
                 $or: [{
                     name: nameOrEmali
