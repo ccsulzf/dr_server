@@ -10,29 +10,17 @@ module.exports.attributes = (DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        userId: { // 用户ID
+        expenseBookId: { // 用户ID
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        province: { //省份|直辖市
+        name: { //用户名
             type: DataTypes.STRING,
             allowNull: false
         },
-        city: { //直辖市|市
+        memo: { //备注
             type: DataTypes.STRING,
             allowNull: false
-        },
-        area: { // 区/县/县级市
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        isCurrenLive: { //是否是当前居住地.0-否  1-是
-            type: DataTypes.INTEGER,
-            defaultValue: 0
-        },
-        memo:{
-            type: DataTypes.STRING,
-            allowNull: true
         }
     }
 };

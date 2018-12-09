@@ -311,3 +311,72 @@
      index: 0,
      sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' },
   sql: 'SELECT `id`, `name`, `email`, `password`, `createdAt`, `updatedAt`, `deletedAt` FROM `user` AS `user` WHERE (`user`.`deletedAt` IS NULL AND ((`user`.`name` = \'admin\' OR `user`.`email` = \'admin\') AND `user`.`password` = 123456)) LIMIT 1;' }
+[2018-12-08 21:22:18.840] [ERROR] error - ReferenceError: User is not defined
+    at UserService.login (I:/dr/dr_server/src/api/services/UserService.js:10:20)
+    at login (I:/dr/dr_server/src/api/controllers/UserController.js:8:40)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
+[2018-12-08 21:22:20.034] [ERROR] error - ReferenceError: User is not defined
+    at UserService.login (I:/dr/dr_server/src/api/services/UserService.js:10:20)
+    at login (I:/dr/dr_server/src/api/controllers/UserController.js:8:40)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
+[2018-12-08 21:22:29.319] [ERROR] error - ReferenceError: User is not defined
+    at UserService.login (I:/dr/dr_server/src/api/services/UserService.js:10:20)
+    at login (I:/dr/dr_server/src/api/controllers/UserController.js:8:40)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
+[2018-12-09 08:50:23.867] [ERROR] error - Error: SequelizeValidationError: notNull Violation: name cannot be null,
+notNull Violation: memo cannot be null
+    at _create (I:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2018-12-09 08:51:44.959] [ERROR] error - Error: SequelizeValidationError: notNull Violation: name cannot be null,
+notNull Violation: memo cannot be null
+    at _create (I:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2018-12-09 08:52:36.574] [ERROR] error - Error: SequelizeValidationError: notNull Violation: memo cannot be null
+    at _create (I:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2018-12-09 08:54:21.249] [ERROR] error - Error: SequelizeValidationError: notNull Violation: memo cannot be null
+    at _create (I:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2018-12-09 10:43:46.095] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
