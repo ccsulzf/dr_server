@@ -10,17 +10,26 @@ module.exports.attributes = (DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        userId: { // 用户ID
+        fundAccountId: { // 用户ID
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        name: { //用户名
+
+        creditAmount: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        usedAmount: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        billDay: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        memo: { //备注
+        repaymentDay: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         }
     }
 };

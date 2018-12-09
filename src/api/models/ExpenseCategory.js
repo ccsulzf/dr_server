@@ -20,7 +20,7 @@ module.exports.attributes = (DataTypes) => {
         },
         memo: { //备注
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         }
     }
 };

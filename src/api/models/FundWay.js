@@ -18,6 +18,10 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
+        type: { //支付方式 1.现金支付 2.电子支付
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         memo: { //备注
             type: DataTypes.STRING,
             allowNull: true

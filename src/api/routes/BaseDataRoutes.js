@@ -4,5 +4,5 @@ module.exports = {
 	 * 用户认证与授权                                                           *
 	 *                                                                          *
 	 ***************************************************************************/
-	'GET /test': "TestController.test",
+	'GET /getFundCount': "BaseDataController.getFundCount",
 };

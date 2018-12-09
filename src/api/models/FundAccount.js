@@ -14,13 +14,21 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        name: { //用户名
+        fundWayId: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        name: { // name
             type: DataTypes.STRING,
             allowNull: false
         },
-        memo: { //备注
+        amount: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        isCredit: { //支付方式 1.现金支付 2.电子支付
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         }
     }
 };

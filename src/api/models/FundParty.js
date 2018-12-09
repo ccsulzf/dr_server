@@ -14,7 +14,15 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        name: { //用户名
+        category: { // 类别 1.个人 2.非个人
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        type: { //1.支出 2.收入
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        name: { //商家名
             type: DataTypes.STRING,
             allowNull: false
         },
