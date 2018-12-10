@@ -23,23 +23,30 @@ export class BaseDataService {
                     raw: true,
                     nest: true
                 });
-                item.fundCount = creditAccount;
+                item.creditAccount = creditAccount;
             }
         }
         return fundCountList;
     }
 
-    async login(nameOrEmali, password) {
-        let data = await User.find({
-            where: {
-                $or: [{
-                    name: nameOrEmali
-                }, {
-                    email: nameOrEmali
-                }],
-                password: password
-            }
+    async addFundCount(fundAccount, creditAccount) {
+        let fund = await FundAccount.create(fundAccount, {
+            transaction: this.transaction,
+            raw: true,
+            nest: true
         });
-        return data;
+        console.info(fund);
+        if (fund && fundAccount.isCredit) {
+            creditAccount.fundAccountId = fund.id;
+            let credit = await CreditAccount.create(creditAccount, {
+                transaction: this.transaction,
+                raw: true,
+                nest: true
+            });
+            if (credit) {
+                fund.creditAccount = credit;
+            }
+        }
+        return fund;
     }
 }
