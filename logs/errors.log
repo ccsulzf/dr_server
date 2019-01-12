@@ -10357,3 +10357,496 @@ notNull Violation: memo cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-01-04 20:37:48.590] [ERROR] error - { SequelizeValidationError: notNull Violation: userId cannot be null,
+notNull Violation: fundWayId cannot be null,
+notNull Violation: name cannot be null,
+notNull Violation: amount cannot be null,
+notNull Violation: isCredit cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: userId cannot be null,\nnotNull Violation: fundWayId cannot be null,\nnotNull Violation: name cannot be null,\nnotNull Violation: amount cannot be null,\nnotNull Violation: isCredit cannot be null',
+  errors: 
+   [ { message: 'userId cannot be null',
+       type: 'notNull Violation',
+       path: 'userId',
+       value: null },
+     { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null },
+     { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null },
+     { message: 'isCredit cannot be null',
+       type: 'notNull Violation',
+       path: 'isCredit',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-04 20:39:23.766] [ERROR] error - { SequelizeValidationError: notNull Violation: userId cannot be null,
+notNull Violation: fundWayId cannot be null,
+notNull Violation: name cannot be null,
+notNull Violation: amount cannot be null,
+notNull Violation: isCredit cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: userId cannot be null,\nnotNull Violation: fundWayId cannot be null,\nnotNull Violation: name cannot be null,\nnotNull Violation: amount cannot be null,\nnotNull Violation: isCredit cannot be null',
+  errors: 
+   [ { message: 'userId cannot be null',
+       type: 'notNull Violation',
+       path: 'userId',
+       value: null },
+     { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null },
+     { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null },
+     { message: 'isCredit cannot be null',
+       type: 'notNull Violation',
+       path: 'isCredit',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-04 20:41:08.790] [ERROR] error - { SequelizeValidationError: notNull Violation: userId cannot be null,
+notNull Violation: fundWayId cannot be null,
+notNull Violation: name cannot be null,
+notNull Violation: amount cannot be null,
+notNull Violation: isCredit cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: userId cannot be null,\nnotNull Violation: fundWayId cannot be null,\nnotNull Violation: name cannot be null,\nnotNull Violation: amount cannot be null,\nnotNull Violation: isCredit cannot be null',
+  errors: 
+   [ { message: 'userId cannot be null',
+       type: 'notNull Violation',
+       path: 'userId',
+       value: null },
+     { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null },
+     { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null },
+     { message: 'isCredit cannot be null',
+       type: 'notNull Violation',
+       path: 'isCredit',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-04 20:41:57.913] [ERROR] error - { SequelizeValidationError: notNull Violation: userId cannot be null,
+notNull Violation: fundWayId cannot be null,
+notNull Violation: name cannot be null,
+notNull Violation: amount cannot be null,
+notNull Violation: isCredit cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: userId cannot be null,\nnotNull Violation: fundWayId cannot be null,\nnotNull Violation: name cannot be null,\nnotNull Violation: amount cannot be null,\nnotNull Violation: isCredit cannot be null',
+  errors: 
+   [ { message: 'userId cannot be null',
+       type: 'notNull Violation',
+       path: 'userId',
+       value: null },
+     { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null },
+     { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null },
+     { message: 'isCredit cannot be null',
+       type: 'notNull Violation',
+       path: 'isCredit',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-04 20:42:53.559] [ERROR] error - { SequelizeValidationError: notNull Violation: userId cannot be null,
+notNull Violation: fundWayId cannot be null,
+notNull Violation: name cannot be null,
+notNull Violation: amount cannot be null,
+notNull Violation: isCredit cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: userId cannot be null,\nnotNull Violation: fundWayId cannot be null,\nnotNull Violation: name cannot be null,\nnotNull Violation: amount cannot be null,\nnotNull Violation: isCredit cannot be null',
+  errors: 
+   [ { message: 'userId cannot be null',
+       type: 'notNull Violation',
+       path: 'userId',
+       value: null },
+     { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null },
+     { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null },
+     { message: 'isCredit cannot be null',
+       type: 'notNull Violation',
+       path: 'isCredit',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-04 20:44:45.670] [ERROR] error - ReferenceError: err is not defined
+    at addExpense (I:/dr/dr_server/src/api/controllers/ExpenseController.js:8:19)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\dr\dr_server\node_modules\co\index.js:118:63)
+[2019-01-04 20:45:13.965] [ERROR] error - { TypeError: Cannot read property 'console' of undefined
+    at addExpense (I:/dr/dr_server/src/api/controllers/ExpenseController.js:5:9)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (I:\dr\dr_server\node_modules\co\index.js:118:63) expose: false, statusCode: 500, status: 500 }
+[2019-01-12 11:35:48.151] [ERROR] error - ReferenceError: transaction is not defined
+    at addExpense (I:/dr/dr_server/src/api/controllers/ExpenseController.js:13:9)
+    at <anonymous>
+[2019-01-12 11:36:31.745] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseId cannot be null,
+notNull Violation: content cannot be null,
+notNull Violation: amount cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseId cannot be null,\nnotNull Violation: content cannot be null,\nnotNull Violation: amount cannot be null',
+  errors: 
+   [ { message: 'expenseId cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseId',
+       value: null },
+     { message: 'content cannot be null',
+       type: 'notNull Violation',
+       path: 'content',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-12 11:39:22.019] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'expenseDetailId\' in \'field list\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'expenseDetailId\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,1,\'2019-01-12 11:39:21\',\'2019-01-12 11:39:21\');' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'expenseDetailId\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,1,\'2019-01-12 11:39:21\',\'2019-01-12 11:39:21\');' },
+  sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,1,\'2019-01-12 11:39:21\',\'2019-01-12 11:39:21\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-12 11:43:06.717] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'expenseDetailId\' in \'field list\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'expenseDetailId\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,2,\'2019-01-12 11:43:06\',\'2019-01-12 11:43:06\');' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'expenseDetailId' in 'field list'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'expenseDetailId\' in \'field list\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,2,\'2019-01-12 11:43:06\',\'2019-01-12 11:43:06\');' },
+  sql: 'INSERT INTO `ExpenseDetailParticipant` (`id`,`participantId`,`expenseDetailId`,`createdAt`,`updatedAt`) VALUES (NULL,1,2,\'2019-01-12 11:43:06\',\'2019-01-12 11:43:06\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
