@@ -5,14 +5,37 @@ export class ExpenseService {
 
     async addExpense(data) {
         try {
-            const expenseData = await Expense.create(data.expense, {
-                transaction: this.transaction,
-                raw: true,
-                nest: true
+            let hasExpense;
+            let expenseData;
+            let expense;
+            hasExpense = await Expense.find({
+                where: {
+                    expenseBookId: data.expense.expenseBookId,
+                    userId: data.expense.userId,
+                    expenseDate: data.expense.expenseDate
+                }
             });
-            const expense = expenseData.dataValues;
 
-            data.expenseDetail.expenseId = expense.id;
+            if (hasExpense) {
+                hasExpense.totalAmount += data.expense.totalAmount;
+                await Expense.update({
+                    totalAmount: hasExpense.totalAmount
+                }, {
+                    where: {
+                        id: hasExpense.id
+                    },
+                    transaction: this.transaction
+                })
+            } else {
+                expenseData = await Expense.create(data.expense, {
+                    transaction: this.transaction,
+                    raw: true,
+                    nest: true
+                });
+                expense = expenseData.dataValues;
+            }
+
+            data.expenseDetail.expenseId = hasExpense ? hasExpense.id : expense.id;
             const expenseDetailData = await ExpenseDetail.create(data.expenseDetail, {
                 transaction: this.transaction,
                 raw: true,

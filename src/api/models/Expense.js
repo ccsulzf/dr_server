@@ -17,31 +17,15 @@ module.exports.attributes = (DataTypes) => {
         expenseBookId: { // 账本ID
             type: DataTypes.INTEGER,
             allowNull: false
-        },
-        addressId: { // 地点ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        expenseCategoryId: { // 支出类型ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundWayId: { // 资金来往方式ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundAccountId: { // 资金账户ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundPartyId: { //资金来往方ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
+        },  
         expenseDate: {
             type: DataTypes.DATE,
             allowNull: false
-        }
+        },
+        totalAmount: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
     }
 };
 

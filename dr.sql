@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50622
 File Encoding         : 65001
 
-Date: 2019-01-12 12:55:02
+Date: 2019-01-15 21:43:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -68,22 +68,18 @@ CREATE TABLE `expense` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) NOT NULL,
   `expenseBookId` int(11) NOT NULL,
-  `addressId` int(11) NOT NULL,
-  `expenseCategoryId` int(11) NOT NULL DEFAULT '0',
-  `fundWayId` int(11) NOT NULL,
-  `fundAccountId` int(11) NOT NULL,
-  `fundPartyId` int(11) NOT NULL,
   `expenseDate` datetime NOT NULL,
+  `totalAmount` float(11,3) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expense
 -- ----------------------------
-INSERT INTO `expense` VALUES ('10', '1', '1', '1', '1', '1', '6', '1', '2019-01-12 00:00:00', '2019-01-12 11:47:10', '2019-01-12 11:47:10', null);
+INSERT INTO `expense` VALUES ('12', '1', '1', '2019-01-15 00:00:00', '123.000', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
 
 -- ----------------------------
 -- Table structure for expensebook
@@ -138,16 +134,21 @@ CREATE TABLE `expensedetail` (
   `content` varchar(255) NOT NULL,
   `amount` float(11,3) NOT NULL,
   `memo` varchar(255) DEFAULT NULL,
+  `fundPartyId` int(11) NOT NULL,
+  `addressId` int(11) NOT NULL,
+  `expenseCategoryId` int(11) NOT NULL DEFAULT '0',
+  `fundWayId` int(11) NOT NULL,
+  `fundAccountId` int(11) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensedetail
 -- ----------------------------
-INSERT INTO `expensedetail` VALUES ('3', '10', '测试', '123.000', '123', '2019-01-12 11:47:10', '2019-01-12 11:47:10', null);
+INSERT INTO `expensedetail` VALUES ('8', '12', '123', '123.000', null, '1', '1', '1', '1', '6', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
 
 -- ----------------------------
 -- Table structure for expensedetaillabel
@@ -166,7 +167,6 @@ CREATE TABLE `expensedetaillabel` (
 -- ----------------------------
 -- Records of expensedetaillabel
 -- ----------------------------
-INSERT INTO `expensedetaillabel` VALUES ('3', '1', '3', '2019-01-12 11:47:11', '2019-01-12 11:47:11', null);
 
 -- ----------------------------
 -- Table structure for expensedetailparticipant
@@ -180,12 +180,12 @@ CREATE TABLE `expensedetailparticipant` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensedetailparticipant
 -- ----------------------------
-INSERT INTO `expensedetailparticipant` VALUES ('1', '3', '1', '2019-01-12 11:47:11', '2019-01-12 11:47:11', null);
+INSERT INTO `expensedetailparticipant` VALUES ('6', '8', '1', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
 
 -- ----------------------------
 -- Table structure for fundaccount
