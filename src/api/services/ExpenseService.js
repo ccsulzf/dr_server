@@ -43,6 +43,45 @@ export class ExpenseService {
             });
             const expenseDetail = expenseDetailData.dataValues;
 
+            // 处理付款账户
+            const fundAccount = await FundAccount.find({
+                where: {
+                    id: data.expenseDetail.fundAccountId
+                },
+                raw: true,
+                nest: true
+            })
+
+
+            fundAccount.balance = (fundAccount.balance * 100 - data.expenseDetail.amount * 100) / 100;
+            await FundAccount.update({
+                balance: fundAccount.balance
+            }, {
+                where: {
+                    id: fundAccount.id
+                },
+                transaction: this.transaction
+            });
+            // 如果是信贷用户
+            if (fundAccount.isCredit == 1) {
+                const creditAccount = await CreditAccount.find({
+                    where: {
+                        fundAccountId: fundAccount.id
+                    },
+                    raw: true,
+                    nest: true
+                });
+                creditAccount.usedAmount = (creditAccount.usedAmount * 100 + data.expenseDetail.amount * 100) / 100;
+                await CreditAccount.update({
+                    usedAmount: creditAccount.usedAmount
+                }, {
+                    where: {
+                        id: creditAccount.id
+                    },
+                    transaction: this.transaction
+                });
+            }
+
             if (data.labelList && data.labelList.length) {
                 let expenseDetailLabelList = [];
                 for (let item of data.labelList) {
@@ -57,6 +96,7 @@ export class ExpenseService {
                     nest: true
                 });
             }
+
 
             if (data.participantList && data.participantList.length) {
                 let expenseDetailParticipantList = [];

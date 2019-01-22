@@ -22,7 +22,7 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        amount: {
+        balance: {
             type: DataTypes.FLOAT,
             allowNull: false
         },
