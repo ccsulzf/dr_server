@@ -2,15 +2,15 @@
 Navicat MySQL Data Transfer
 
 Source Server         : localhost_3306
-Source Server Version : 50622
+Source Server Version : 50722
 Source Host           : localhost:3306
 Source Database       : dr
 
 Target Server Type    : MYSQL
-Target Server Version : 50622
+Target Server Version : 50722
 File Encoding         : 65001
 
-Date: 2019-01-22 06:23:00
+Date: 2019-01-23 18:07:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,12 +31,12 @@ CREATE TABLE `address` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of address
 -- ----------------------------
-INSERT INTO `address` VALUES ('1', '1', '湖南省', '长沙市', '新化县', '0', null, '2018-12-08 13:08:59', '2018-12-08 13:09:02', null);
+INSERT INTO `address` VALUES ('2', '1', '湖南省', '长沙市', '', '1', null, '2019-01-22 10:04:59', '2019-01-22 10:04:59', null);
 
 -- ----------------------------
 -- Table structure for creditaccount
@@ -45,20 +45,19 @@ DROP TABLE IF EXISTS `creditaccount`;
 CREATE TABLE `creditaccount` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `fundAccountId` int(11) NOT NULL,
-  `creditAmount` float(11,0) NOT NULL,
-  `usedAmount` float(11,0) NOT NULL,
+  `creditAmount` float(11,2) NOT NULL,
+  `usedAmount` float(11,2) NOT NULL,
   `repaymentDay` varchar(50) NOT NULL,
   `billDay` varchar(50) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of creditaccount
 -- ----------------------------
-INSERT INTO `creditaccount` VALUES ('2', '9', '200', '0', '2018-12-02', '2018-12-01', '2018-12-10 21:51:43', '2018-12-10 21:51:43', null);
 
 -- ----------------------------
 -- Table structure for expense
@@ -69,19 +68,17 @@ CREATE TABLE `expense` (
   `userId` int(11) NOT NULL,
   `expenseBookId` int(11) NOT NULL,
   `expenseDate` date NOT NULL,
-  `totalAmount` float(11,3) NOT NULL,
+  `totalAmount` float(11,2) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expense
 -- ----------------------------
-INSERT INTO `expense` VALUES ('12', '1', '1', '2019-01-15', '123.000', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
-INSERT INTO `expense` VALUES ('13', '1', '1', '2019-01-19', '936.000', '2019-01-19 13:17:15', '2019-01-19 19:16:05', null);
-INSERT INTO `expense` VALUES ('14', '1', '2', '2019-01-19', '123.000', '2019-01-19 19:19:22', '2019-01-19 19:19:22', null);
+INSERT INTO `expense` VALUES ('30', '1', '3', '2019-01-23', '2.00', '2019-01-23 15:31:24', '2019-01-23 17:27:18', null);
 
 -- ----------------------------
 -- Table structure for expensebook
@@ -96,13 +93,13 @@ CREATE TABLE `expensebook` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensebook
 -- ----------------------------
-INSERT INTO `expensebook` VALUES ('1', '1', '一日三餐', '123', '2018-12-07 19:09:33', '2018-12-07 19:09:33', null);
-INSERT INTO `expensebook` VALUES ('2', '1', '生活其他', '234', '2018-12-07 19:19:01', '2018-12-07 19:19:01', null);
+INSERT INTO `expensebook` VALUES ('3', '1', '一日三餐', '记录日常的一日三餐', '2019-01-22 10:04:45', '2019-01-22 10:04:45', null);
+INSERT INTO `expensebook` VALUES ('4', '1', '文具书籍', '', '2019-01-22 15:48:58', '2019-01-22 15:48:58', null);
 
 -- ----------------------------
 -- Table structure for expensecategory
@@ -117,7 +114,7 @@ CREATE TABLE `expensecategory` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensecategory
@@ -126,6 +123,9 @@ INSERT INTO `expensecategory` VALUES ('1', '1', '123', '', '2018-12-09 14:21:22'
 INSERT INTO `expensecategory` VALUES ('2', '1', '234', '', '2018-12-09 15:17:21', '2018-12-09 15:17:21', null);
 INSERT INTO `expensecategory` VALUES ('3', '1', '456', '', '2018-12-09 15:19:02', '2018-12-09 15:19:02', null);
 INSERT INTO `expensecategory` VALUES ('4', '2', '零食水果', '', '2019-01-19 19:17:53', '2019-01-19 19:17:53', null);
+INSERT INTO `expensecategory` VALUES ('5', '3', '早餐', '', '2019-01-22 10:05:11', '2019-01-22 10:05:11', null);
+INSERT INTO `expensecategory` VALUES ('6', '4', '书籍', '', '2019-01-22 15:49:48', '2019-01-22 15:49:48', null);
+INSERT INTO `expensecategory` VALUES ('7', '3', '买菜', '', '2019-01-22 15:51:09', '2019-01-22 15:51:09', null);
 
 -- ----------------------------
 -- Table structure for expensedetail
@@ -135,7 +135,7 @@ CREATE TABLE `expensedetail` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `expenseId` int(11) NOT NULL,
   `content` varchar(255) NOT NULL,
-  `amount` float(11,3) NOT NULL,
+  `amount` float(11,2) NOT NULL,
   `memo` varchar(255) DEFAULT NULL,
   `fundPartyId` int(11) NOT NULL,
   `addressId` int(11) NOT NULL,
@@ -146,17 +146,12 @@ CREATE TABLE `expensedetail` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensedetail
 -- ----------------------------
-INSERT INTO `expensedetail` VALUES ('8', '12', '123', '123.000', null, '1', '1', '1', '1', '6', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
-INSERT INTO `expensedetail` VALUES ('9', '13', '123', '123.000', '123123', '1', '1', '1', '1', '6', '2019-01-19 13:17:16', '2019-01-19 13:17:16', null);
-INSERT INTO `expensedetail` VALUES ('10', '13', '123', '123.000', '123', '1', '1', '1', '1', '6', '2019-01-19 13:30:39', '2019-01-19 13:30:39', null);
-INSERT INTO `expensedetail` VALUES ('11', '13', '234', '456.000', '123', '1', '1', '2', '1', '6', '2019-01-19 13:43:42', '2019-01-19 13:43:42', null);
-INSERT INTO `expensedetail` VALUES ('12', '13', '234', '234.000', null, '1', '1', '1', '1', '6', '2019-01-19 19:16:05', '2019-01-19 19:16:05', null);
-INSERT INTO `expensedetail` VALUES ('13', '14', '测试', '123.000', null, '1', '1', '4', '1', '6', '2019-01-19 19:19:22', '2019-01-19 19:19:22', null);
+INSERT INTO `expensedetail` VALUES ('35', '30', '馒头', '2.00', null, '3', '2', '5', '2', '14', '2019-01-23 15:31:24', '2019-01-23 17:27:18', null);
 
 -- ----------------------------
 -- Table structure for expensedetaillabel
@@ -175,9 +170,6 @@ CREATE TABLE `expensedetaillabel` (
 -- ----------------------------
 -- Records of expensedetaillabel
 -- ----------------------------
-INSERT INTO `expensedetaillabel` VALUES ('1', '1', '9', '2019-01-19 13:17:16', '2019-01-19 13:17:16', null);
-INSERT INTO `expensedetaillabel` VALUES ('2', '1', '10', '2019-01-19 13:30:39', '2019-01-19 13:30:39', null);
-INSERT INTO `expensedetaillabel` VALUES ('3', '1', '11', '2019-01-19 13:43:42', '2019-01-19 13:43:42', null);
 
 -- ----------------------------
 -- Table structure for expensedetailparticipant
@@ -191,16 +183,12 @@ CREATE TABLE `expensedetailparticipant` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of expensedetailparticipant
 -- ----------------------------
-INSERT INTO `expensedetailparticipant` VALUES ('6', '8', '1', '2019-01-15 21:00:14', '2019-01-15 21:00:14', null);
-INSERT INTO `expensedetailparticipant` VALUES ('7', '9', '1', '2019-01-19 13:17:16', '2019-01-19 13:17:16', null);
-INSERT INTO `expensedetailparticipant` VALUES ('8', '10', '1', '2019-01-19 13:30:39', '2019-01-19 13:30:39', null);
-INSERT INTO `expensedetailparticipant` VALUES ('9', '12', '1', '2019-01-19 19:16:05', '2019-01-19 19:16:05', null);
-INSERT INTO `expensedetailparticipant` VALUES ('10', '13', '1', '2019-01-19 19:19:24', '2019-01-19 19:19:24', null);
+INSERT INTO `expensedetailparticipant` VALUES ('34', '35', '1', '2019-01-23 17:27:18', '2019-01-23 17:27:18', null);
 
 -- ----------------------------
 -- Table structure for fundaccount
@@ -210,21 +198,19 @@ CREATE TABLE `fundaccount` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `fundWayId` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
-  `amount` float(11,0) NOT NULL,
+  `balance` float(11,2) NOT NULL,
   `name` varchar(255) NOT NULL,
   `isCredit` int(11) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of fundaccount
 -- ----------------------------
-INSERT INTO `fundaccount` VALUES ('6', '1', '1', '0', '测试', '0', '2018-12-10 21:49:11', '2018-12-10 21:49:11', null);
-INSERT INTO `fundaccount` VALUES ('7', '1', '1', '0', '测试2', '0', '2018-12-10 21:49:49', '2018-12-10 21:49:49', null);
-INSERT INTO `fundaccount` VALUES ('9', '1', '1', '0', '测试3', '1', '2018-12-10 21:51:43', '2018-12-10 21:51:43', null);
+INSERT INTO `fundaccount` VALUES ('14', '2', '1', '98.00', '余额', '0', '2019-01-23 15:30:22', '2019-01-23 17:27:18', null);
 
 -- ----------------------------
 -- Table structure for fundparty
@@ -241,13 +227,17 @@ CREATE TABLE `fundparty` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of fundparty
 -- ----------------------------
-INSERT INTO `fundparty` VALUES ('1', '1', '123', '1', '1', '', '2018-12-09 15:29:05', '2018-12-09 15:29:08', null);
-INSERT INTO `fundparty` VALUES ('2', '1', '测试', '1', '1', '12', '2018-12-09 15:39:57', '2018-12-09 15:39:57', null);
+INSERT INTO `fundparty` VALUES ('3', '1', '大米先生', '2', '1', null, '2019-01-22 10:05:36', '2019-01-22 10:05:36', null);
+INSERT INTO `fundparty` VALUES ('4', '1', '新佳宜', '2', '1', null, '2019-01-22 10:05:55', '2019-01-22 10:05:55', null);
+INSERT INTO `fundparty` VALUES ('5', '1', '京东', '2', '1', null, '2019-01-22 15:50:01', '2019-01-22 15:50:01', null);
+INSERT INTO `fundparty` VALUES ('6', '1', '三利粮油', '1', '1', '菜市场', '2019-01-22 15:52:37', '2019-01-22 15:52:37', null);
+INSERT INTO `fundparty` VALUES ('7', '1', '菜市场', '1', '1', '代表所有的菜市场的个人卖主', '2019-01-22 15:58:44', '2019-01-22 15:58:44', null);
+INSERT INTO `fundparty` VALUES ('8', '1', '珊珊便利店', '2', '1', null, '2019-01-23 10:18:01', '2019-01-23 10:18:01', null);
 
 -- ----------------------------
 -- Table structure for fundway
@@ -263,12 +253,13 @@ CREATE TABLE `fundway` (
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of fundway
 -- ----------------------------
-INSERT INTO `fundway` VALUES ('1', '1', '支付宝', null, '2', '2018-12-09 17:46:51', '2018-12-09 17:46:51', null);
+INSERT INTO `fundway` VALUES ('2', '1', '支付宝', null, '2', '2019-01-22 10:06:15', '2019-01-22 10:06:15', null);
+INSERT INTO `fundway` VALUES ('3', '1', '微信', null, '2', '2019-01-22 15:52:49', '2019-01-22 15:52:49', null);
 
 -- ----------------------------
 -- Table structure for label
@@ -289,7 +280,6 @@ CREATE TABLE `label` (
 -- ----------------------------
 -- Records of label
 -- ----------------------------
-INSERT INTO `label` VALUES ('1', '1', '234', '1', '0', '2018-12-29 21:30:10', '2018-12-29 21:30:10', null);
 
 -- ----------------------------
 -- Table structure for participant
@@ -300,18 +290,18 @@ CREATE TABLE `participant` (
   `userId` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `alias` varchar(255) DEFAULT NULL,
+  `isMySelf` tinyint(2) NOT NULL DEFAULT '0',
   `memo` varchar(255) NOT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `deletedAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of participant
 -- ----------------------------
-INSERT INTO `participant` VALUES ('1', '1', '测试', 'test', '123123', '2018-12-15 16:15:37', '2018-12-15 16:15:37', null);
-INSERT INTO `participant` VALUES ('2', '1', '测试2', '测试2', '', '2018-12-15 22:17:01', '2018-12-15 22:17:01', null);
+INSERT INTO `participant` VALUES ('1', '1', '李志锋', '', '1', '', '2019-01-23 10:09:52', '2019-01-23 10:09:52', null);
 
 -- ----------------------------
 -- Table structure for user
