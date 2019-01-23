@@ -10880,3 +10880,489 @@ notNull Violation: amount cannot be null
 [2019-01-15 20:59:03.019] [ERROR] error - { TypeError: Cannot read property 'id' of undefined
     at ExpenseService.addExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:38:52)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-23 09:59:39.228] [ERROR] error - Error: SequelizeValidationError: notNull Violation: isMyself cannot be null
+    at _create (F:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2019-01-23 10:00:30.335] [ERROR] error - Error: SequelizeValidationError: notNull Violation: isMyself cannot be null
+    at _create (F:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2019-01-23 15:12:23.081] [ERROR] error - { ReferenceError: data is not defined
+    at editExpense (F:/dr/dr_server/src/api/controllers/ExpenseController.js:24:22)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-23 15:30:29.876] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:103:45)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-23 15:30:32.873] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:103:45)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-23 15:32:06.885] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:32:06\' WHERE `id` = 30' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:32:06\' WHERE `id` = 30' },
+  sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:32:06\' WHERE `id` = 30',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-23 15:35:12.542] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:12\' WHERE `id` = 30' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:12\' WHERE `id` = 30' },
+  sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:12\' WHERE `id` = 30',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-23 15:35:44.077] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:44\' WHERE `id` = 30' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:44\' WHERE `id` = 30' },
+  sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:35:44\' WHERE `id` = 30',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-23 15:36:10.333] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:10\' WHERE `id` = 30' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:10\' WHERE `id` = 30' },
+  sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:10\' WHERE `id` = 30',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-23 15:36:44.995] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:44\' WHERE `id` = 30' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:44\' WHERE `id` = 30' },
+  sql: 'UPDATE `Expense` SET `id`=30,`expenseDate`=\'2019-01-23 08:00:00\',`userId`=1,`expenseBookId`=3,`totalAmount`=\'NaN\',`updatedAt`=\'2019-01-23 15:36:44\' WHERE `id` = 30',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-23 15:41:58.138] [ERROR] error - { ReferenceError: expenseDetail is not defined
+    at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:211:42)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-23 18:03:48.894] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at F:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2019-01-23 18:03:59.370] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at F:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }

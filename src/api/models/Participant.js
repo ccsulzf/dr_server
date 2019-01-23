@@ -22,6 +22,10 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.STRING,
             allowNull: true
         },
+        isMyself:{
+            type: DataTypes.BOOLEAN,
+            allowNull: false
+        },
         memo: { //备注
             type: DataTypes.STRING,
             allowNull: true
