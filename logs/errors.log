@@ -11366,3 +11366,10 @@ notNull Violation: amount cannot be null
     at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
     at F:/dr/dr_server/src/middleware/body-handler.js:7:32
     at <anonymous> message: '请求的路径或资源不存在' }
+[2019-01-24 10:47:52.182] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2019-01-24 14:28:32.195] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:103:45)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }

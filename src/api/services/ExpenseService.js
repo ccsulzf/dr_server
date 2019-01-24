@@ -8,6 +8,7 @@ export class ExpenseService {
             let hasExpense;
             let expenseData;
             let expense;
+
             hasExpense = await Expense.find({
                 where: {
                     expenseBookId: data.expense.expenseBookId,
@@ -111,7 +112,10 @@ export class ExpenseService {
                 });
             }
 
-            return data.expenseDetail.expenseId;
+            return {
+                expenseId: data.expenseDetail.expenseId,
+                expenseDetail: expenseDetail
+            };
         } catch (error) {
             throw error;
         }
@@ -130,18 +134,88 @@ export class ExpenseService {
 
             const spread = (prevExpenseDetail.amount * 100 - data.expenseDetail.amount * 100) / 100;
 
-            data.expense.totalAmount = (data.expense.totalAmount * 100 - (spread * 100)) / 100;
+            const oldExpense = await Expense.find({
+                where: {
+                    id: data.expense.id
+                },
+                raw: true,
+                nest: true
+            });
+
+
+            if ((oldExpense.expenseBookId === data.expense.expenseBookId) &&
+                (oldExpense.expenseDate === data.expense.expenseDate)) {
+                // 如果什么都相等,直接更新就好了
+                data.expense.totalAmount = (data.expense.totalAmount * 100 - (spread * 100)) / 100;
+                await Expense.update(data.expense, {
+                    where: {
+                        id: data.expense.id
+                    },
+                    transaction: this.transaction,
+                });
+            } else {
+                // 如果账本相等,但是日期不相等,则找到该日期的expense数据
+
+                // 先把之前的expense数据平掉
+                oldExpense.totalAmount = (oldExpense.totalAmount * 100 - data.expenseDetail.amount * 100) / 100;
+
+                if (oldExpense.totalAmount > 0) {
+                    await Expense.update({
+                        totalAmount: oldExpense.totalAmount
+                    }, {
+                        where: {
+                            id: oldExpense.id
+                        },
+                        transaction: this.transaction,
+                    });
+                } else {
+                    await Expense.destroy({
+                        where: {
+                            id: oldExpense.id
+                        },
+                        transaction: this.transaction,
+                        force: true
+                    });
+                }
+
+                // 再找有没有相同的日期或者相同账本的信息
+                const findExpense = await Expense.find({
+                    where: {
+                        expenseDate: data.expense.expenseDate,
+                        expenseBookId: data.expense.expenseBookId
+                    },
+                    raw: true,
+                    nest: true
+                });
+
+                if (findExpense) {
+                    // 更新
+                    findExpense.totalAmount = (findExpense.totalAmount * 100 + data.expenseDetail.amount * 100) / 100;
+                    await Expense.update({
+                        totalAmount: findExpense.totalAmount
+                    }, {
+                        where: {
+                            id: findExpense.id
+                        },
+                        transaction: this.transaction,
+                    });
+                    data.expenseDetail.expenseId = findExpense.id;
+                } else {
+                    // 新增
+                    delete data.expense.id;
+                    const expenseData = await Expense.create(data.expense, {
+                        transaction: this.transaction,
+                        raw: true,
+                        nest: true
+                    });
+                    const createExpense = expenseData.dataValues;
+                    data.expenseDetail.expenseId = createExpense.id;
+                }
+            }
 
             await ExpenseDetail.update(data.expenseDetail, {
                 where: {
                     id: data.expenseDetail.id
-                },
-                transaction: this.transaction,
-            });
-
-            await Expense.update(data.expense, {
-                where: {
-                    id: data.expense.id
                 },
                 transaction: this.transaction,
             });
@@ -277,7 +351,7 @@ export class ExpenseService {
 
                 await ExpenseDetailLabel.destroy({
                     where: {
-                        expenseDetailId: data.expenseDetail.id
+                        expenseDetailId: prevExpenseDetail.id
                     },
                     transaction: this.transaction,
                     force: true
@@ -302,7 +376,7 @@ export class ExpenseService {
 
                 await ExpenseDetailParticipant.destroy({
                     where: {
-                        expenseDetailId: data.expenseDetail.id
+                        expenseDetailId: prevExpenseDetail.id
                     },
                     transaction: this.transaction,
                     force: true
