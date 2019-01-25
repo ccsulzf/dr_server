@@ -11373,3 +11373,111 @@ notNull Violation: amount cannot be null
 [2019-01-24 14:28:32.195] [ERROR] error - { TypeError: Cannot read property 'id' of null
     at ExpenseService.addExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:103:45)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-25 10:53:17.764] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2019-01-25 10:54:33.399] [ERROR] error - { ReferenceError: data is not defined
+    at delExpense (f:/dr/dr_server/src/api/controllers/ExpenseController.js:42:41)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-25 10:55:01.057] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'balance' at row 1
+    at Query.formatError (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'balance\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'balance' at row 1
+    at Query.Sequence._packetToError (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at f:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (f:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (f:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'balance\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `FundAccount` SET `balance`=\'NaN\',`updatedAt`=\'2019-01-25 10:55:00\' WHERE `id` = 18' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'balance' at row 1
+    at Query.Sequence._packetToError (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at f:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (f:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (f:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'balance\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `FundAccount` SET `balance`=\'NaN\',`updatedAt`=\'2019-01-25 10:55:00\' WHERE `id` = 18' },
+  sql: 'UPDATE `FundAccount` SET `balance`=\'NaN\',`updatedAt`=\'2019-01-25 10:55:00\' WHERE `id` = 18',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-01-25 10:55:37.856] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:409:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-25 10:55:57.920] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:411:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-25 10:56:42.057] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:411:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }

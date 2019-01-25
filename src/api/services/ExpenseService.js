@@ -388,6 +388,118 @@ export class ExpenseService {
                     nest: true
                 });
             }
+
+            return prevExpenseDetail;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+
+    async delExpense(expenseDetailId) {
+        try {
+            const expenseDetail = await ExpenseDetail.find({
+                where: {
+                    id: expenseDetailId
+                },
+                raw: true,
+                nest: true
+            });
+
+            const expense = await Expense.find({
+                where: {
+                    id: expenseDetail.expenseId
+                },
+                raw: true,
+                nest: true
+            });
+
+            // 删除相关的参与人
+            await ExpenseDetailParticipant.destroy({
+                where: {
+                    expenseDetailId: expenseDetailId
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+            // 删除相关的标签
+            await ExpenseDetailLabel.destroy({
+                where: {
+                    expenseDetailId: expenseDetailId
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+            // 删除明细
+            await ExpenseDetail.destroy({
+                where: {
+                    id: expenseDetailId
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+
+            // 处理支出,如果只有一条,则也删除expense,否则就更新
+            const spread = (expense.totalAmount * 100 - expenseDetail.amount * 100) / 100;
+            if (spread === 0) {
+                await Expense.destroy({
+                    where: {
+                        id: expense.id
+                    },
+                    transaction: this.transaction,
+                    force: true
+                })
+            } else {
+                await Expense.update({
+                    totalAmount: spread
+                }, {
+                    where: {
+                        id: expense.id
+                    },
+                    transaction: this.transaction
+                });
+            }
+
+            const fundAccount = await FundAccount.find({
+                where: {
+                    id: expenseDetail.fundAccountId
+                }
+            });
+
+            // FundAccount balance+
+            // CreditAccount usedAmount-
+
+            fundAccount.balance = (fundAccount.balance * 100 + expenseDetail.amount * 100) / 100;
+
+            await FundAccount.update({
+                balance: fundAccount.balance
+            }, {
+                where: {
+                    id: fundAccount.id
+                },
+                transaction: this.transaction
+            })
+
+            if (fundAccount.isCredit) {
+                const creditAccount = await CreditAccount.find({
+                    where: {
+                        fundAccountId: fundAccount.id
+                    }
+                });
+
+                creditAccount.usedAmount = (creditAccount.usedAmount * 100 - expenseDetail.amount * 100) / 100;
+                await CreditAccount.update({
+                    usedAmount: creditAccount.usedAmount
+                }, {
+                    where: {
+                        id: creditAccount.id
+                    },
+                    transaction: this.transaction
+                });
+            }
         } catch (error) {
             throw error;
         }

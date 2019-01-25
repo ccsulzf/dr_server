@@ -23,7 +23,24 @@ export async function editExpense(ctx, next) {
     try {
         const data = ctx.request.body;
         let expenseService = new ExpenseService(transaction);
-        await expenseService.editExpense(data);
+        const prevExpenseDetail = await expenseService.editExpense(data);
+        await transaction.commit();
+        ctx.body = prevExpenseDetail;
+    } catch (error) {
+        await transaction.rollback();
+        ctx.throw(error);
+    }
+}
+
+
+// 删除支出
+export async function delExpense(ctx, next) {
+    let transaction = await db.sequelize.transaction();
+    try {
+        const expenseDetailId = ctx.query.expenseDetailId;
+
+        let expenseService = new ExpenseService(transaction);
+        await expenseService.delExpense(expenseDetailId);
         await transaction.commit();
         ctx.body = true;
     } catch (error) {
