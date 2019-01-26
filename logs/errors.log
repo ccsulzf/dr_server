@@ -11481,3 +11481,6 @@ notNull Violation: amount cannot be null
 [2019-01-25 10:56:42.057] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
     at ExpenseService.delExpense (f:/dr/dr_server/src/api/services/ExpenseService.js:411:39)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-25 20:05:48.099] [ERROR] error - { TypeError: moment is not a function
+    at ExpenseService.editExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:151:45)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }

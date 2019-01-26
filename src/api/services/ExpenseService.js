@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export class ExpenseService {
     constructor(transaction) {
         this.transaction = transaction || null;
@@ -142,9 +144,10 @@ export class ExpenseService {
                 nest: true
             });
 
+            oldExpense.expenseDate = moment(oldExpense.expenseDate).format('YYYY-MM-DD');
 
-            if ((oldExpense.expenseBookId === data.expense.expenseBookId) &&
-                (oldExpense.expenseDate === data.expense.expenseDate)) {
+            if (oldExpense.expenseBookId === data.expense.expenseBookId &&
+                oldExpense.expenseDate === data.expense.expenseDate) {
                 // 如果什么都相等,直接更新就好了
                 data.expense.totalAmount = (data.expense.totalAmount * 100 - (spread * 100)) / 100;
                 await Expense.update(data.expense, {
@@ -155,7 +158,6 @@ export class ExpenseService {
                 });
             } else {
                 // 如果账本相等,但是日期不相等,则找到该日期的expense数据
-
                 // 先把之前的expense数据平掉
                 oldExpense.totalAmount = (oldExpense.totalAmount * 100 - data.expenseDetail.amount * 100) / 100;
 
@@ -260,7 +262,8 @@ export class ExpenseService {
                         raw: true,
                         nest: true
                     });
-                    creditAccount.usedAmount = (creditAccount.usedAmount * 100 + (spread * 100)) / 100;
+
+                    creditAccount.usedAmount = (creditAccount.usedAmount * 100 - (spread * 100)) / 100;
                     await CreditAccount.update({
                         usedAmount: creditAccount.usedAmount
                     }, {
