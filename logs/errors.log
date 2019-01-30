@@ -11484,3 +11484,143 @@ notNull Violation: amount cannot be null
 [2019-01-25 20:05:48.099] [ERROR] error - { TypeError: moment is not a function
     at ExpenseService.editExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:151:45)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-28 14:21:06.796] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:21:22.177] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:21:37.224] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:21:52.261] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:22:07.303] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:22:22.336] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:22:37.368] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:22:52.410] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:23:07.443] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:23:22.464] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:23:37.493] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:23:52.521] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:24:07.551] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:24:22.593] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:24:37.629] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:24:52.659] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:25:07.700] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:25:22.749] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:25:37.780] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:25:52.813] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:26:07.849] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-28 14:26:22.878] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-01-30 10:31:02.702] [ERROR] error - ReferenceError: ctx is not defined
+    at addLabel (f:/dr/dr_server/src/api/controllers/BaseDataController.js:24:19)
+    at dispatch (f:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (f:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at f:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (f:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at f:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (f:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (f:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (f:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (f:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (f:\dr\dr_server\node_modules\co\index.js:65:19)
+    at f:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (f:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (f:\dr\dr_server\node_modules\co\index.js:118:63)
+[2019-01-30 10:38:40.060] [ERROR] error - { TypeError: data.spread is not a function
+    at BaseDataService.addLabel (f:/dr/dr_server/src/api/services/BaseDataService.js:19:21)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-01-30 15:35:26.123] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (f:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at f:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }
+[2019-01-30 16:52:30.721] [ERROR] error - Error: SequelizeDatabaseError: ER_NO_DEFAULT_FOR_FIELD: Field 'userId' doesn't have a default value
+    at _create (f:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2019-01-30 17:04:17.187] [ERROR] error - Error: SequelizeValidationError: notNull Violation: type cannot be null
+    at _create (f:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>

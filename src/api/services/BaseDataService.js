@@ -6,6 +6,20 @@ export class BaseDataService {
         this.transaction = transaction || null;
     }
 
+    async addLabel(label) {
+        return await Label.findOrCreate({
+            where: {
+                type: label.type,
+                name: label.name,
+                userId: label.userId
+            }
+        }).spread((result, created) => {
+            return result.get({
+                plain: true
+            });
+        });
+    }
+
     async getFundCount(userId) {
         let fundCountList = await FundAccount.findAll({
             where: {
@@ -35,7 +49,6 @@ export class BaseDataService {
             raw: true,
             nest: true
         });
-        console.info(fund);
         if (fund && fundAccount.isCredit) {
             creditAccount.fundAccountId = fund.id;
             let credit = await CreditAccount.create(creditAccount, {

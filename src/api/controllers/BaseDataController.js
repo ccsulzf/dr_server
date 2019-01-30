@@ -18,5 +18,14 @@ export async function addFundCount(ctx, next) {
         await transaction.rollback();
         ctx.throw(err);
     }
+}
 
+export async function addLabel(ctx, next) {
+    const label = ctx.request.body;
+    try {
+        const baseDataService = new BaseDataService();
+        ctx.body = await baseDataService.addLabel(label);
+    } catch (err) {
+        ctx.throw(err);
+    }
 }
