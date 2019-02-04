@@ -11624,3 +11624,8 @@ notNull Violation: amount cannot be null
 [2019-01-30 17:04:17.187] [ERROR] error - Error: SequelizeValidationError: notNull Violation: type cannot be null
     at _create (f:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
     at <anonymous>
+[2019-02-04 10:09:49.208] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }

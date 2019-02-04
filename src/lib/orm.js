@@ -15,7 +15,7 @@ if (config.use_env_variable) {
 	sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
 	sequelize = new Sequelize(config.database, config.username, config.password, Object.assign({}, config, {
-		logging: false,
+		logging: true,
 		underscored: true,
 		underscoredAll: true,
 		isolationLevel: Sequelize.Transaction.ISOLATION_LEVELS.READ_COMMITTED,
