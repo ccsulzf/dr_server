@@ -16,3 +16,13 @@ export async function addIncome(ctx, next) {
         ctx.throw(error);
     }
 }
+
+// 获取收入list
+export async function getIncomeList(ctx, next) {
+    try {
+        const incomeListDate = ctx.query.incomeListDate;
+        ctx.body = await new IncomeService().getIncomeList(incomeListDate);
+    } catch (error) {
+        ctx.throw(error);
+    }
+}

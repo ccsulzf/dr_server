@@ -14,7 +14,7 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        incomeDetailId: { // 用户ID
+        incomeId: { // 用户ID
             type: DataTypes.INTEGER,
             allowNull: false
         },
