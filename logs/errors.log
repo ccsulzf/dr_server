@@ -11909,3 +11909,18 @@ notNull Violation: amount cannot be null
     at new Promise (<anonymous>)
     at Object.co (I:\dr\dr_server\node_modules\co\index.js:50:10)
     at Object.toPromise (I:\dr\dr_server\node_modules\co\index.js:118:63) expose: false, statusCode: 500, status: 500 }
+[2019-02-08 23:14:58.028] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at IncomeService.edit (I:/dr/dr_server/src/api/services/IncomeService.js:195:70)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-02-08 23:15:51.941] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at IncomeService.edit (I:/dr/dr_server/src/api/services/IncomeService.js:195:70)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-02-08 23:16:22.880] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at IncomeService.edit (I:/dr/dr_server/src/api/services/IncomeService.js:197:70)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-02-08 23:28:36.976] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at IncomeService.edit (I:/dr/dr_server/src/api/services/IncomeService.js:195:70)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-02-09 14:46:50.193] [ERROR] error - { ReferenceError: data is not defined
+    at IncomeService.delete (I:/dr/dr_server/src/api/services/IncomeService.js:420:25)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
