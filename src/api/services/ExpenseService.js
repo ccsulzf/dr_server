@@ -1,8 +1,36 @@
 import moment from 'moment';
-
+import * as _ from 'lodash';
 export class ExpenseService {
     constructor(transaction) {
         this.transaction = transaction || null;
+    }
+
+    async getExpenseCategory(userId) {
+        try {
+            const expenseBookList = await ExpenseBook.findAll({
+                where: {
+                    userId: userId
+                },
+                raw: true,
+                nest: true
+            });
+            if (expenseBookList && expenseBookList.length) {
+                const expenseBookIds = _.map(expenseBookList, 'id');
+                return await ExpenseCategory.findAll({
+                    where: {
+                        expenseBookId: {
+                            $in: expenseBookIds
+                        }
+                    },
+                    raw: true,
+                    nest: true
+                });
+            } else {
+                return [];
+            }
+        } catch (error) {
+            throw error;
+        }
     }
 
     async addExpense(data) {

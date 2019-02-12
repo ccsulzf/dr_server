@@ -2,6 +2,17 @@ import {
     ExpenseService
 } from '../services';
 
+// 获取ExpenseCategroy
+export async function getExpenseCategory(ctx, next) {
+    try {
+        const userId = ctx.request.query.userId;
+        let expenseService = new ExpenseService();
+        ctx.body = await expenseService.getExpenseCategory(userId);
+    } catch (error) {
+        ctx.throw(error);
+    }
+}
+
 // 添加支出
 export async function addExpense(ctx, next) {
     let transaction = await db.sequelize.transaction();
