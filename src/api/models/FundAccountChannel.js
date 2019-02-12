@@ -10,20 +10,12 @@ module.exports.attributes = (DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        userId: { // 用户ID
+        fundAccountId: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        name: { // name
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        balance: {
-            type: DataTypes.FLOAT,
-            allowNull: false
-        },
-        isCredit: { //支付方式 1.现金支付 2.电子支付
-            type: DataTypes.STRING,
+        fundChannelId: {
+            type: DataTypes.INTEGER,
             allowNull: false
         }
     }

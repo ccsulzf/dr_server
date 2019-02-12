@@ -37,7 +37,16 @@ export class BaseDataService {
                     raw: true,
                     nest: true
                 });
+
+                let fundChannelIds = await FundAccountChannel.find({
+                    where: {
+                        fundAccountId: item.id
+                    },
+                    raw: true,
+                    nest: true
+                });
                 item.creditAccount = creditAccount;
+                item.fundChannelIds = fundChannelIds;
             }
         }
         return fundCountList;
