@@ -11,10 +11,13 @@ export async function getFundCount(ctx, next) {
 export async function addFundCount(ctx, next) {
     const fundAccount = ctx.request.body.fundAccount;
     const creditAccount = ctx.request.body.creditAccount;
+    const fundChannelList = ctx.request.body.fundChannelList;
+    
     let transaction = await db.sequelize.transaction();
     let baseDataService = new BaseDataService(transaction);
     try {
-        ctx.body = await baseDataService.addFundCount(fundAccount, creditAccount);
+        ctx.body = await baseDataService.addFundCount(fundAccount, creditAccount,fundChannelList);
+        console.info(ctx.body);
         await transaction.commit();
     } catch (err) {
         await transaction.rollback();

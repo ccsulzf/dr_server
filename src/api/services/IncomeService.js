@@ -435,7 +435,7 @@ export class IncomeService {
                     addressId: data.income.addressId,
                     incomeCategoryId: data.income.incomeCategoryId,
                     fundPartyId: data.income.fundPartyId,
-                    fundWayId: data.income.fundWayId,
+                    fundChannelId: data.income.fundChannelId,
                     fundAccountId: data.income.fundAccountId,
                     $and: {
                         startDate: {
@@ -455,6 +455,22 @@ export class IncomeService {
                             $lte: moment(data.income.startDate).format('YYYY-MM-DD'),
                         }
                     },
+                    // $or: {
+                    //     startDate: {
+                    //         $gte: moment(data.income.startDate).format('YYYY-MM-DD'),
+                    //     },
+                    //     endDate: {
+                    //         $lte: moment(data.income.endDate).format('YYYY-MM-DD'),
+                    //     }
+                    // },
+                    // $or: {
+                    //     startDate: {
+                    //         $lte: moment(data.income.startDate).format('YYYY-MM-DD'),
+                    //     },
+                    //     endDate: {
+                    //         $gte: moment(data.income.endDate).format('YYYY-MM-DD'),
+                    //     }
+                    // },
                     $and: {
                         endDate: {
                             $gte: moment(data.income.endDate).format('YYYY-MM-01'),

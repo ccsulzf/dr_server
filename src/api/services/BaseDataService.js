@@ -1,6 +1,8 @@
 /**
  * Created by wp on 2017-01-05.
  */
+
+import * as _ from 'lodash';
 export class BaseDataService {
     constructor(transaction) {
         this.transaction = transaction || null;
@@ -30,7 +32,7 @@ export class BaseDataService {
         });
         if (fundCountList && fundCountList) {
             for (let item of fundCountList) {
-                let creditAccount = await CreditAccount.find({
+                const creditAccount = await CreditAccount.find({
                     where: {
                         fundAccountId: item.id
                     },
@@ -38,37 +40,65 @@ export class BaseDataService {
                     nest: true
                 });
 
-                let fundChannelIds = await FundAccountChannel.find({
+                const fundAccountChannelList = await FundAccountChannel.findAll({
                     where: {
                         fundAccountId: item.id
                     },
                     raw: true,
                     nest: true
                 });
+
+                const fundChannelList = await FundChannel.findAll({
+                    where: {
+                        id: {
+                            $in: _.map(fundAccountChannelList, 'fundChannelId')
+                        }
+                    },
+                    raw: true,
+                    nest: true
+                })
+
                 item.creditAccount = creditAccount;
-                item.fundChannelIds = fundChannelIds;
+                item.fundChannelList = fundChannelList;
             }
         }
         return fundCountList;
     }
 
-    async addFundCount(fundAccount, creditAccount) {
-        let fund = await FundAccount.create(fundAccount, {
+    async addFundCount(addFundAccount, creditAccount, fundChannelList) {
+        let  fundAccount;
+        let fund = await FundAccount.create(addFundAccount, {
             transaction: this.transaction,
             raw: true,
             nest: true
         });
-        if (fund && fundAccount.isCredit) {
-            creditAccount.fundAccountId = fund.id;
+        fundAccount = fund.dataValues;
+        if (fundAccount && fundAccount.isCredit) {
+            creditAccount.fundAccountId = fundAccount.id;
             let credit = await CreditAccount.create(creditAccount, {
                 transaction: this.transaction,
                 raw: true,
                 nest: true
             });
             if (credit) {
-                fund.creditAccount = credit;
+                fundAccount.creditAccount = credit.dataValues;
             }
         }
-        return fund;
+        if (fundAccount && fundChannelList.length) {
+            const fundAccountChannelList = [];
+            for (const item of fundChannelList) {
+                fundAccountChannelList.push({
+                    fundAccountId: fundAccount.id,
+                    fundChannelId: item.id
+                });
+            }
+            await FundAccountChannel.bulkCreate(fundAccountChannelList, {
+                transaction: this.transaction,
+                raw: true,
+                nest: true
+            });
+            fundAccount.fundChannelList = fundChannelList;
+        }
+        return fundAccount;
     }
 }

@@ -18548,3 +18548,190 @@ notNull Violation: amount cannot be null
     at baseForOwn (f:\dr\dr_server\node_modules\sequelize\node_modules\lodash\lodash.js:2652:24)
     at Function.forOwn (f:\dr\dr_server\node_modules\sequelize\node_modules\lodash\lodash.js:12254:24)
     at Object.whereItemsQuery (f:\dr\dr_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2010:9) expose: false, statusCode: 500, status: 500 }
+[2019-02-13 11:02:23.140] [ERROR] error - { SequelizeValidationError: notNull Violation: fundWayId cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundWayId cannot be null',
+  errors: 
+   [ { message: 'fundWayId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundWayId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-02-13 14:04:58.389] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null,
+notNull Violation: amount cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null,\nnotNull Violation: amount cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null },
+     { message: 'amount cannot be null',
+       type: 'notNull Violation',
+       path: 'amount',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-02-13 14:05:14.137] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-02-13 14:49:24.957] [ERROR] error - { SequelizeDatabaseError: ER_BAD_NULL_ERROR: Column 'labelId' cannot be null
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_NULL_ERROR: Column \'labelId\' cannot be null',
+  parent: 
+   { Error: ER_BAD_NULL_ERROR: Column 'labelId' cannot be null
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_NULL_ERROR',
+     errno: 1048,
+     sqlMessage: 'Column \'labelId\' cannot be null',
+     sqlState: '23000',
+     index: 0,
+     sql: 'INSERT INTO `IncomeLabel` (`id`,`labelId`,`incomeId`,`createdAt`,`updatedAt`) VALUES (NULL,4,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\'),(NULL,NULL,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\');' },
+  original: 
+   { Error: ER_BAD_NULL_ERROR: Column 'labelId' cannot be null
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_NULL_ERROR',
+     errno: 1048,
+     sqlMessage: 'Column \'labelId\' cannot be null',
+     sqlState: '23000',
+     index: 0,
+     sql: 'INSERT INTO `IncomeLabel` (`id`,`labelId`,`incomeId`,`createdAt`,`updatedAt`) VALUES (NULL,4,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\'),(NULL,NULL,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\');' },
+  sql: 'INSERT INTO `IncomeLabel` (`id`,`labelId`,`incomeId`,`createdAt`,`updatedAt`) VALUES (NULL,4,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\'),(NULL,NULL,3,\'2019-02-13 14:49:24\',\'2019-02-13 14:49:24\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-02-13 16:53:58.803] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at F:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-02-13 16:54:05.123] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at F:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous> message: '请求的路径或资源不存在' }

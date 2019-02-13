@@ -27,7 +27,7 @@ module.exports.attributes = (DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        fundWayId: { // 资金来往方式ID
+        fundChannelId: { // 资金来往方式ID
             type: DataTypes.INTEGER,
             allowNull: false
         },
