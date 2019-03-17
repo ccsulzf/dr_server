@@ -1,5 +1,5 @@
-const port = Number.parseInt(process.env.PORT) || 1500;
-const socketPort = Number.parseInt(process.env.WSPORT) || 3000;
+const port = Number.parseInt(process.env.PORT) || 1501;
+const socketPort = Number.parseInt(process.env.WSPORT) || 3001;
 
 module.exports = {
     port: port,

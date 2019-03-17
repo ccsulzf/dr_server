@@ -6,3 +6,4 @@
 *-compiled.js
 *-compiled.js.map
 logs/*.log
+/dist
