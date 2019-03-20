@@ -18735,3 +18735,306 @@ notNull Violation: amount cannot be null
     at Object.throw (F:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
     at F:/dr/dr_server/src/middleware/body-handler.js:7:32
     at <anonymous> message: '请求的路径或资源不存在' }
+[2019-03-20 20:51:17.207] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-20 20:51:30.025] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:/dr/dr_server/src/middleware/body-handler.js:7:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-20 20:52:50.844] [ERROR] error - { TypeError: this.fieldMaps is not iterable
+    at ExpenseDetailReportService._bindSelect (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:90:35)
+    at ExpenseDetailReportService.getDetail (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:42:34)
+    at getDetail (I:/dr/dr_server/src/api/controllers/ExpenseDetailReportController.js:9:53)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>) expose: false, statusCode: 500, status: 500 }
+[2019-03-20 20:54:49.541] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'ed.expenseIdundefinedundefined' in 'on clause'
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'ed.expenseIdundefinedundefined\' in \'on clause\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'ed.expenseIdundefinedundefined' in 'on clause'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'ed.expenseIdundefinedundefined\' in \'on clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseIdundefinedundefined' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'ed.expenseIdundefinedundefined' in 'on clause'
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'ed.expenseIdundefinedundefined\' in \'on clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseIdundefinedundefined' },
+  sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseIdundefinedundefined',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-03-20 20:56:27.601] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'undefined' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'undefined' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'undefined' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined' },
+  sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'undefined',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-03-20 20:57:08.794] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.expenseDate >= '2019-03-20' AND e.expenseDate <= '2019-03-20'' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'' },
+  sql: 'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId e.expenseDate >= \'2019-03-20\' AND e.expenseDate <= \'2019-03-20\'',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
