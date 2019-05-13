@@ -49,7 +49,7 @@ export class ExpenseDetailReportService {
             let joinSQL = ` FROM 
                             Expense AS e 
                             INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId`;
-            let sql = selectSQL + joinSQL + dateSQL + filterSQL;
+            let sql = selectSQL + joinSQL + dateSQL + filterSQL + ' ORDER BY e.expenseDate DESC';
 
             return await this._execSql(sql);
         } catch (error) {
@@ -63,16 +63,16 @@ export class ExpenseDetailReportService {
             let field = this._getField(condition.field);
             if (field) {
                 switch (condition.type) {
-                    case 'equals':
+                    case 'equal':
                         if (Array.isArray(condition.value)) {
                             if (condition.value.length > 1) {
                                 filter += ' AND ' + field.scheme + '.' + condition.field + ' IN (' + condition.value.join(',') + ')';
-                            } else if (value.length === 1) {
+                            } else if (condition.value.length === 1) {
                                 filter += ' AND ' + field.scheme + '.' + condition.field + '=' + condition.value[0];
                             }
                         }
                         break;
-                    case 'contains':
+                    case 'contain':
                         filter += ' AND ' + field.scheme + '.' + condition.field + ' LIKE \'%' + condition.value + '%\'';
                         break;
                     case 'range':
@@ -84,6 +84,9 @@ export class ExpenseDetailReportService {
                                 filter += ' AND ' + field.scheme + '.' + condition.field + '<=' + condition.value.end;
                             }
                         }
+                        break;
+                    default:
+                        break;
                 }
             }
         }

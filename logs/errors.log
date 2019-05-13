@@ -19038,3 +19038,1363 @@ notNull Violation: amount cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-03-21 22:28:13.880] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:2625)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-03-22 21:54:03.953] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-03-24 19:56:41.216] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-03-25 21:07:22.651] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-26 19:00:04.030] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-26 19:00:21.239] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-26 19:01:05.785] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-03-31 20:15:51.660] [ERROR] error - { SequelizeValidationError: notNull Violation: fundAccountId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundAccountId cannot be null',
+  errors: 
+   [ { message: 'fundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundAccountId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-04 19:22:17.564] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''听说红蒜很香，买来试试','2019-04-04 19:22:15','2019-04-04 19:22:15')' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''听说红蒜很香，买来试试','2019-04-04 19:22:15','2019-04-04 19:22:15')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,40,1,4,2,1,1,\'红蒜\',,\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''听说红蒜很香，买来试试','2019-04-04 19:22:15','2019-04-04 19:22:15')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,40,1,4,2,1,1,\'红蒜\',,\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\');' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,40,1,4,2,1,1,\'红蒜\',,\'听说红蒜很香，买来试试\',\'2019-04-04 19:22:15\',\'2019-04-04 19:22:15\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-09 22:35:35.743] [ERROR] error - { SequelizeValidationError: notNull Violation: totalAmount cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: totalAmount cannot be null',
+  errors: 
+   [ { message: 'totalAmount cannot be null',
+       type: 'notNull Violation',
+       path: 'totalAmount',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-09 22:36:27.661] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6块钱5快，也有点小贵','2019-04-09 22:36:27','2019-04-09 22:36:27')' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6块钱5快，也有点小贵','2019-04-09 22:36:27','2019-04-09 22:36:27')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,52,1,2,2,1,16,\'臭豆腐\',,\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6块钱5快，也有点小贵','2019-04-09 22:36:27','2019-04-09 22:36:27')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,52,1,2,2,1,16,\'臭豆腐\',,\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\');' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,52,1,2,2,1,16,\'臭豆腐\',,\'6块钱5快，也有点小贵\',\'2019-04-09 22:36:27\',\'2019-04-09 22:36:27\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-15 12:09:55.301] [ERROR] error - { SequelizeValidationError: notNull Violation: totalAmount cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: totalAmount cannot be null',
+  errors: 
+   [ { message: 'totalAmount cannot be null',
+       type: 'notNull Violation',
+       path: 'totalAmount',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-21 20:40:24.482] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','2019-04-21 20:40:22','2019-04-21 20:40:22')' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','2019-04-21 20:40:22','2019-04-21 20:40:22')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,65,1,8,1,6,5,\'可乐\',,\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','2019-04-21 20:40:22','2019-04-21 20:40:22')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,65,1,8,1,6,5,\'可乐\',,\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\');' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,65,1,8,1,6,5,\'可乐\',,\'\',\'2019-04-21 20:40:22\',\'2019-04-21 20:40:22\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-24 20:19:11.093] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:524:59)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-24 20:20:44.441] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:524:59)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-25 22:09:38.003] [ERROR] error - { SequelizeValidationError: notNull Violation: startDate cannot be null,
+notNull Violation: endDate cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: startDate cannot be null,\nnotNull Violation: endDate cannot be null',
+  errors: 
+   [ { message: 'startDate cannot be null',
+       type: 'notNull Violation',
+       path: 'startDate',
+       value: null },
+     { message: 'endDate cannot be null',
+       type: 'notNull Violation',
+       path: 'endDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-25 22:10:28.721] [ERROR] error - { SequelizeValidationError: notNull Violation: startDate cannot be null,
+notNull Violation: endDate cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: startDate cannot be null,\nnotNull Violation: endDate cannot be null',
+  errors: 
+   [ { message: 'startDate cannot be null',
+       type: 'notNull Violation',
+       path: 'startDate',
+       value: null },
+     { message: 'endDate cannot be null',
+       type: 'notNull Violation',
+       path: 'endDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-04-26 20:32:23.274] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.editExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:7057)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-26 20:32:34.069] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.editExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:7057)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-26 20:33:54.959] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:2625)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-26 20:33:58.148] [ERROR] error - { TypeError: Cannot read property 'id' of null
+    at ExpenseService.addExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:2625)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-04-26 20:40:18.282] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-04-26 20:40:16','2019-04-26 20:40:16')' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-04-26 20:40:16','2019-04-26 20:40:16')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,10,\'2019-04-25 00:00:00\',,\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2019-04-26 20:40:16','2019-04-26 20:40:16')' at line 1
+    at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,10,\'2019-04-25 00:00:00\',,\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\');' },
+  sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,10,\'2019-04-25 00:00:00\',,\'2019-04-26 20:40:16\',\'2019-04-26 20:40:16\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-02 10:05:07.791] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-05 18:55:48.587] [ERROR] error - { SequelizeValidationError: notNull Violation: fundAccountId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundAccountId cannot be null',
+  errors: 
+   [ { message: 'fundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundAccountId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-05 18:56:53.492] [ERROR] error - { SequelizeValidationError: notNull Violation: fundAccountId cannot be null,
+notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundAccountId cannot be null,\nnotNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundAccountId',
+       value: null },
+     { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-05 18:59:23.093] [ERROR] error - { SequelizeValidationError: notNull Violation: fundAccountId cannot be null,
+notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundAccountId cannot be null,\nnotNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundAccountId',
+       value: null },
+     { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-05 19:00:16.731] [ERROR] error - { SequelizeValidationError: notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-05 19:49:58.259] [ERROR] error - { SequelizeValidationError: notNull Violation: fundAccountId cannot be null,
+notNull Violation: fundPartyId cannot be null
+    at I:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (I:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (I:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: fundAccountId cannot be null,\nnotNull Violation: fundPartyId cannot be null',
+  errors: 
+   [ { message: 'fundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundAccountId',
+       value: null },
+     { message: 'fundPartyId cannot be null',
+       type: 'notNull Violation',
+       path: 'fundPartyId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-07 21:44:52.850] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-05-07 21:45:28.652] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-05-07 21:45:46.601] [ERROR] error - { NotFoundError: 请求的路径或资源不存在
+    at Object.throw (I:\dr\dr_server\node_modules\koa\lib\context.js:93:11)
+    at I:\dr\dr_server\dist\middleware\body-handler.js:1:321
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7) message: '请求的路径或资源不存在' }
+[2019-05-10 22:19:53.364] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:\dr\dr_server\dist\api\services\ExpenseService.js:1:9106) expose: false, statusCode: 500, status: 500 }
+[2019-05-11 10:15:21.096] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message:
+   'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+  parent:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  original:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  sql:
+   'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-11 10:16:06.180] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message:
+   'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+  parent:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  original:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  sql:
+   'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-11 10:16:19.372] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message:
+   'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+  parent:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  original:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  sql:
+   'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-11 10:16:58.122] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message:
+   'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+  parent:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  original:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE' },
+  sql:
+   'SELECT e.userId,e.expenseBookId,e.expenseDate,ed.expenseId,ed.addressId,ed.expenseCategoryId,ed.fundChannelId,ed.fundAccountId,ed.fundPartyId,ed.content,ed.amount,ed.memo FROM \n                            Expense AS e \n                            INNER JOIN ExpenseDetail AS ed ON e.id=ed.expenseId WHERE',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-11 10:48:14.403] [ERROR] error - { ReferenceError: value is not defined
+    at ExpenseDetailReportService._bindFilter (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:66:36)
+    at ExpenseDetailReportService.getDetail (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:43:47)
+    at getDetail (I:/dr/dr_server/src/api/controllers/ExpenseDetailReportController.js:9:53)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>) expose: false, statusCode: 500, status: 500 }
+[2019-05-11 10:50:26.101] [ERROR] error - { ReferenceError: value is not defined
+    at ExpenseDetailReportService._bindFilter (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:68:36)
+    at ExpenseDetailReportService.getDetail (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:43:47)
+    at getDetail (I:/dr/dr_server/src/api/controllers/ExpenseDetailReportController.js:9:53)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>) expose: false, statusCode: 500, status: 500 }
+[2019-05-11 10:51:53.728] [ERROR] error - { ReferenceError: value is not defined
+    at ExpenseDetailReportService._bindFilter (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:71:36)
+    at ExpenseDetailReportService.getDetail (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:43:47)
+    at getDetail (I:/dr/dr_server/src/api/controllers/ExpenseDetailReportController.js:9:53)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>) expose: false, statusCode: 500, status: 500 }
+[2019-05-11 10:54:37.567] [ERROR] error - { ReferenceError: value is not defined
+    at ExpenseDetailReportService._bindFilter (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:76:36)
+    at ExpenseDetailReportService.getDetail (I:/dr/dr_server/src/api/services/ExpenseDetailReportService.js:47:47)
+    at getDetail (I:/dr/dr_server/src/api/controllers/ExpenseDetailReportController.js:9:53)
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at I:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at I:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (I:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (I:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (I:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (I:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (I:\dr\dr_server\node_modules\co\index.js:65:19)
+    at I:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>) expose: false, statusCode: 500, status: 500 }
+[2019-05-12 22:39:41.667] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看' at line 1
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message:
+   'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看\' at line 1',
+  parent:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,123,1,4,1,6,61,\'\',,\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看到，然后惦记上了，这次冒着大雨赶去买的，说时候，蘸料不好吃！原味的话，还行，其实感觉就是盐焗鸡，表皮焦黄，看上去确实很诱人，但是还是感觉不适合跑这么远去吃，有点小贵。\\n\',\'2019-05-12 22:39:41\',\'2019-05-12 22:39:41\');' },
+  original:
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看' at line 1
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage:
+      'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql:
+      'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,123,1,4,1,6,61,\'\',,\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看到，然后惦记上了，这次冒着大雨赶去买的，说时候，蘸料不好吃！原味的话，还行，其实感觉就是盐焗鸡，表皮焦黄，看上去确实很诱人，但是还是感觉不适合跑这么远去吃，有点小贵。\\n\',\'2019-05-12 22:39:41\',\'2019-05-12 22:39:41\');' },
+  sql:
+   'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,123,1,4,1,6,61,\'\',,\'特别特别想吃烧鸡了，上次和阿舒去吃盟重烧烤的时候就看到，然后惦记上了，这次冒着大雨赶去买的，说时候，蘸料不好吃！原味的话，还行，其实感觉就是盐焗鸡，表皮焦黄，看上去确实很诱人，但是还是感觉不适合跑这么远去吃，有点小贵。\\n\',\'2019-05-12 22:39:41\',\'2019-05-12 22:39:41\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
