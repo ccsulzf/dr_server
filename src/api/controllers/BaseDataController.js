@@ -34,3 +34,13 @@ export async function addLabel(ctx, next) {
         ctx.throw(err);
     }
 }
+
+export async function addOrEditAddress(ctx, next) {
+    const address = ctx.request.body;
+    try {
+        const baseDataService = new BaseDataService();
+        ctx.body = await baseDataService.addLabel(label);
+    } catch (err) {
+        ctx.throw(err);
+    }
+}
