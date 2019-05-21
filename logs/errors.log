@@ -20542,3 +20542,13 @@ notNull Violation: amount cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-05-21 19:58:49.646] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:524:59) expose: false, statusCode: 500, status: 500 }
+[2019-05-21 20:15:09.781] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:524:59) expose: false, statusCode: 500, status: 500 }
+[2019-05-21 20:17:59.349] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:522:59) expose: false, statusCode: 500, status: 500 }
+[2019-05-21 20:19:05.501] [ERROR] error - { TypeError: Cannot read property 'usedAmount' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:524:59) expose: false, statusCode: 500, status: 500 }
+[2019-05-21 20:21:24.099] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (I:/dr/dr_server/src/api/services/ExpenseService.js:442:39) expose: false, statusCode: 500, status: 500 }

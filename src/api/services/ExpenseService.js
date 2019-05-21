@@ -500,9 +500,6 @@ export class ExpenseService {
                 }
             });
 
-            // FundAccount balance+
-            // CreditAccount usedAmount-
-
             fundAccount.balance = (fundAccount.balance * 100 + expenseDetail.amount * 100) / 100;
 
             await FundAccount.update({
@@ -514,7 +511,7 @@ export class ExpenseService {
                 transaction: this.transaction
             })
 
-            if (fundAccount.isCredit) {
+            if (fundAccount.isCredit != 0) {
                 const creditAccount = await CreditAccount.find({
                     where: {
                         fundAccountId: fundAccount.id
