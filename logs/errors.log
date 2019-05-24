@@ -20542,3 +20542,570 @@ notNull Violation: amount cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-05-21 09:46:01.271] [ERROR] error - { SequelizeValidationError: notNull Violation: totalAmount cannot be null
+    at f:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (f:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (f:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (f:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (f:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (f:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (f:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: totalAmount cannot be null',
+  errors: 
+   [ { message: 'totalAmount cannot be null',
+       type: 'notNull Violation',
+       path: 'totalAmount',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-21 09:56:57.842] [ERROR] error - { SequelizeDatabaseError: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.formatError (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'WARN_DATA_TRUNCATED: Data truncated for column \'totalAmount\' at row 1',
+  parent: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at f:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (f:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (f:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `totalAmount`=\'NaN\',`updatedAt`=\'2019-05-21 09:56:57\' WHERE `id` = 9' },
+  original: 
+   { Error: WARN_DATA_TRUNCATED: Data truncated for column 'totalAmount' at row 1
+    at Query.Sequence._packetToError (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (f:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (f:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (f:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at f:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (f:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (f:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at f:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (f:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (f:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'WARN_DATA_TRUNCATED',
+     errno: 1265,
+     sqlMessage: 'Data truncated for column \'totalAmount\' at row 1',
+     sqlState: '01000',
+     index: 0,
+     sql: 'UPDATE `Expense` SET `totalAmount`=\'NaN\',`updatedAt`=\'2019-05-21 09:56:57\' WHERE `id` = 9' },
+  sql: 'UPDATE `Expense` SET `totalAmount`=\'NaN\',`updatedAt`=\'2019-05-21 09:56:57\' WHERE `id` = 9',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-22 14:41:27.742] [ERROR] error - { ReferenceError: label is not defined
+    at addOrEditAddress (F:/dr/dr_server/src/api/controllers/BaseDataController.js:42:51)
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (F:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (F:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (F:\dr\dr_server\node_modules\co\index.js:65:19)
+    at F:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (F:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (F:\dr\dr_server\node_modules\co\index.js:118:63) expose: false, statusCode: 500, status: 500 }
+[2019-05-22 14:41:30.709] [ERROR] error - { ReferenceError: label is not defined
+    at addOrEditAddress (F:/dr/dr_server/src/api/controllers/BaseDataController.js:42:51)
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (F:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (F:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (F:\dr\dr_server\node_modules\co\index.js:65:19)
+    at F:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (F:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (F:\dr\dr_server\node_modules\co\index.js:118:63) expose: false, statusCode: 500, status: 500 }
+[2019-05-22 14:42:01.215] [ERROR] error - Error: SequelizeValidationError: notNull Violation: userId cannot be null
+    at _create (F:\dr\dr_server\node_modules\roas-restql\lib\middlewares.js:382:13)
+    at <anonymous>
+[2019-05-22 17:25:17.978] [ERROR] error - { SequelizeDatabaseError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'addressId' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: \'\' for column \'addressId\' at row 1',
+  parent: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'addressId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'addressId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,10,\'\',1,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:25:17\',\'2019-05-22 17:25:17\');' },
+  original: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'addressId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'addressId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,10,\'\',1,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:25:17\',\'2019-05-22 17:25:17\');' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,10,\'\',1,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:25:17\',\'2019-05-22 17:25:17\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-22 17:26:19.514] [ERROR] error - { SequelizeDatabaseError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'fundAccountId' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: \'\' for column \'fundAccountId\' at row 1',
+  parent: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'fundAccountId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'fundAccountId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,11,4,2,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:26:19\',\'2019-05-22 17:26:19\');' },
+  original: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'fundAccountId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'fundAccountId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,11,4,2,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:26:19\',\'2019-05-22 17:26:19\');' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,11,4,2,1,\'\',1,\'123\',123,\'\',\'2019-05-22 17:26:19\',\'2019-05-22 17:26:19\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 10:40:44.177] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseDate cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseDate cannot be null',
+  errors: 
+   [ { message: 'expenseDate cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 15:42:09.281] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseDate cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseDate cannot be null',
+  errors: 
+   [ { message: 'expenseDate cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 15:43:02.628] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseDate cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseDate cannot be null',
+  errors: 
+   [ { message: 'expenseDate cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 15:44:21.322] [ERROR] error - { SequelizeDatabaseError: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'Invalid date' for column 'expenseDate' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_TRUNCATED_WRONG_VALUE: Incorrect date value: \'Invalid date\' for column \'expenseDate\' at row 1',
+  parent: 
+   { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'Invalid date' for column 'expenseDate' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE',
+     errno: 1292,
+     sqlMessage: 'Incorrect date value: \'Invalid date\' for column \'expenseDate\' at row 1',
+     sqlState: '22007',
+     index: 0,
+     sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,1,\'Invalid date\',123,\'2019-05-24 15:44:21\',\'2019-05-24 15:44:21\');' },
+  original: 
+   { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'Invalid date' for column 'expenseDate' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE',
+     errno: 1292,
+     sqlMessage: 'Incorrect date value: \'Invalid date\' for column \'expenseDate\' at row 1',
+     sqlState: '22007',
+     index: 0,
+     sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,1,\'Invalid date\',123,\'2019-05-24 15:44:21\',\'2019-05-24 15:44:21\');' },
+  sql: 'INSERT INTO `Expense` (`id`,`userId`,`expenseBookId`,`expenseDate`,`totalAmount`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,1,\'Invalid date\',123,\'2019-05-24 15:44:21\',\'2019-05-24 15:44:21\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 15:44:50.089] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseDate cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseDate cannot be null',
+  errors: 
+   [ { message: 'expenseDate cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-24 15:46:12.819] [ERROR] error - { SequelizeValidationError: notNull Violation: expenseDate cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: expenseDate cannot be null',
+  errors: 
+   [ { message: 'expenseDate cannot be null',
+       type: 'notNull Violation',
+       path: 'expenseDate',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }

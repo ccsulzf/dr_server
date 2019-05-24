@@ -250,6 +250,7 @@ export class ExpenseService {
                 transaction: this.transaction,
             });
 
+
             const nowfundAccount = await FundAccount.find({
                 where: {
                     id: data.expenseDetail.fundAccountId
@@ -368,59 +369,61 @@ export class ExpenseService {
                         transaction: this.transaction
                     });
                 }
-
             }
 
-            if (data.labelList && data.labelList.length) {
-                let expenseDetailLabelList = [];
-                for (let item of data.labelList) {
-                    expenseDetailLabelList.push({
-                        labelId: item.id,
-                        expenseDetailId: data.expenseDetail.id
-                    });
-                }
-
-                await ExpenseDetailLabel.destroy({
-                    where: {
-                        expenseDetailId: prevExpenseDetail.id
-                    },
-                    transaction: this.transaction,
-                    force: true
-                });
-
-                await ExpenseDetailLabel.bulkCreate(expenseDetailLabelList, {
-                    transaction: this.transaction,
-                    raw: true,
-                    nest: true
+            // if (data.labelList && data.labelList.length) {
+            let expenseDetailLabelList = [];
+            for (let item of data.labelList) {
+                expenseDetailLabelList.push({
+                    labelId: item.id,
+                    expenseDetailId: data.expenseDetail.id
                 });
             }
 
+            await ExpenseDetailLabel.destroy({
+                where: {
+                    expenseDetailId: prevExpenseDetail.id
+                },
+                transaction: this.transaction,
+                force: true
+            });
 
-            if (data.participantList && data.participantList.length) {
-                let expenseDetailParticipantList = [];
-                for (let item of data.participantList) {
-                    expenseDetailParticipantList.push({
-                        participantId: item.id,
-                        expenseDetailId: data.expenseDetail.id
-                    });
-                }
+            await ExpenseDetailLabel.bulkCreate(expenseDetailLabelList, {
+                transaction: this.transaction,
+                raw: true,
+                nest: true
+            });
+            // }
 
-                await ExpenseDetailParticipant.destroy({
-                    where: {
-                        expenseDetailId: prevExpenseDetail.id
-                    },
-                    transaction: this.transaction,
-                    force: true
-                });
 
-                await ExpenseDetailParticipant.bulkCreate(expenseDetailParticipantList, {
-                    transaction: this.transaction,
-                    raw: true,
-                    nest: true
+            // if (data.participantList && data.participantList.length) {
+            let expenseDetailParticipantList = [];
+            for (let item of data.participantList) {
+                expenseDetailParticipantList.push({
+                    participantId: item.id,
+                    expenseDetailId: data.expenseDetail.id
                 });
             }
 
-            return prevExpenseDetail;
+            await ExpenseDetailParticipant.destroy({
+                where: {
+                    expenseDetailId: prevExpenseDetail.id
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+            await ExpenseDetailParticipant.bulkCreate(expenseDetailParticipantList, {
+                transaction: this.transaction,
+                raw: true,
+                nest: true
+            });
+            // }
+            return true;
+            // return {
+            //     prevExpenseDetailId: prevExpenseDetail.id,
+            //     newExpenseDetail: data.expenseDetail
+            // };
         } catch (error) {
             throw error;
         }
@@ -471,7 +474,6 @@ export class ExpenseService {
                 transaction: this.transaction,
                 force: true
             });
-
 
             // 处理支出,如果只有一条,则也删除expense,否则就更新
             const spread = (expense.totalAmount * 100 - expenseDetail.amount * 100) / 100;
