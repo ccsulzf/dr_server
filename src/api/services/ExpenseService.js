@@ -154,6 +154,8 @@ export class ExpenseService {
 
     async editExpense(data) {
         try {
+
+            let expenseId;
             const prevExpenseDetail = await ExpenseDetail.find({
                 where: {
                     id: data.expenseDetail.id
@@ -176,6 +178,8 @@ export class ExpenseService {
 
             if (oldExpense.expenseBookId === data.expense.expenseBookId &&
                 oldExpense.expenseDate === data.expense.expenseDate) {
+
+                expenseId = oldExpense.id;
                 // 如果什么都相等,直接更新就好了
                 data.expense.totalAmount = (data.expense.totalAmount * 100 - (spread * 100)) / 100;
                 await Expense.update(data.expense, {
@@ -229,6 +233,7 @@ export class ExpenseService {
                         },
                         transaction: this.transaction,
                     });
+                    expenseId = findExpense.id;
                     data.expenseDetail.expenseId = findExpense.id;
                 } else {
                     // 新增
@@ -240,6 +245,7 @@ export class ExpenseService {
                     });
                     const createExpense = expenseData.dataValues;
                     data.expenseDetail.expenseId = createExpense.id;
+                    expenseId = createExpense.id;
                 }
             }
 
@@ -419,7 +425,9 @@ export class ExpenseService {
                 nest: true
             });
             // }
-            return true;
+            return {
+                expenseId:expenseId
+            };
             // return {
             //     prevExpenseDetailId: prevExpenseDetail.id,
             //     newExpenseDetail: data.expenseDetail
@@ -439,7 +447,7 @@ export class ExpenseService {
                 raw: true,
                 nest: true
             });
-
+            console.info(expenseDetail);
             const expense = await Expense.find({
                 where: {
                     id: expenseDetail.expenseId

@@ -21109,3 +21109,300 @@ notNull Violation: amount cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-05-25 10:38:21.200] [ERROR] error - { SequelizeDatabaseError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+  parent: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (21,16,3,\'\',1,18,1,\'123\',100,\'\',\'2019-05-25 10:36:42\',\'2019-05-25 10:38:21\',NULL);' },
+  original: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (21,16,3,\'\',1,18,1,\'123\',100,\'\',\'2019-05-25 10:36:42\',\'2019-05-25 10:38:21\',NULL);' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (21,16,3,\'\',1,18,1,\'123\',100,\'\',\'2019-05-25 10:36:42\',\'2019-05-25 10:38:21\',NULL);',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-25 10:39:53.496] [ERROR] error - { SequelizeDatabaseError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+  parent: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,\'\',1,18,1,\'123\',40,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:39:53\',NULL);' },
+  original: 
+   { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'expenseCategoryId' at row 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlMessage: 'Incorrect integer value: \'\' for column \'expenseCategoryId\' at row 1',
+     sqlState: 'HY000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,\'\',1,18,1,\'123\',40,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:39:53\',NULL);' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,\'\',1,18,1,\'123\',40,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:39:53\',NULL);',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-25 10:42:30.565] [ERROR] error - { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:149:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeUniqueConstraintError',
+  message: 'Validation error',
+  errors: 
+   [ { message: 'PRIMARY must be unique',
+       type: 'unique violation',
+       path: 'PRIMARY',
+       value: '22' } ],
+  fields: { PRIMARY: '22' },
+  parent: 
+   { Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlMessage: 'Duplicate entry \'22\' for key \'PRIMARY\'',
+     sqlState: '23000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,1,1,18,1,\'123\',20,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:42:30\',NULL);' },
+  original: 
+   { Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlMessage: 'Duplicate entry \'22\' for key \'PRIMARY\'',
+     sqlState: '23000',
+     index: 0,
+     sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,1,1,18,1,\'123\',20,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:42:30\',NULL);' },
+  sql: 'INSERT INTO `ExpenseDetail` (`id`,`expenseId`,`addressId`,`expenseCategoryId`,`fundChannelId`,`fundAccountId`,`fundPartyId`,`content`,`amount`,`memo`,`createdAt`,`updatedAt`,`deletedAt`) VALUES (22,16,3,1,1,18,1,\'123\',20,\'\',\'2019-05-25 10:39:31\',\'2019-05-25 10:42:30\',NULL);',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-25 10:57:39.729] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:445:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-25 10:59:15.223] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:445:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-25 10:59:52.967] [ERROR] error - { TypeError: Cannot read property 'expenseId' of null
+    at ExpenseService.delExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:445:39)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-25 16:30:24.593] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:165:47)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-25 16:30:47.311] [ERROR] error - { TypeError: Cannot read property 'amount' of null
+    at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:165:47)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
