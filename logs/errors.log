@@ -21406,3 +21406,203 @@ notNull Violation: amount cannot be null
 [2019-05-25 16:30:47.311] [ERROR] error - { TypeError: Cannot read property 'amount' of null
     at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:165:47)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-27 15:26:44.120] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-27 15:26:44.553] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-27 15:27:11.717] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-27 15:27:12.112] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-27 15:27:12.307] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-27 15:27:12.450] [ERROR] error - { SequelizeValidationError: notNull Violation: name cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: name cannot be null',
+  errors: 
+   [ { message: 'name cannot be null',
+       type: 'notNull Violation',
+       path: 'name',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-05-29 10:50:39.575] [ERROR] error - ReferenceError: _ is not defined
+    at FundAccountService.getFundCount (F:/dr/dr_server/src/api/services/FundAccountService.js:35:34)
+    at <anonymous>
+[2019-05-29 10:52:09.601] [ERROR] error - ReferenceError: _ is not defined
+    at FundAccountService.getFundCount (F:/dr/dr_server/src/api/services/FundAccountService.js:35:34)
+    at <anonymous>
+[2019-05-29 10:52:11.169] [ERROR] error - ReferenceError: _ is not defined
+    at FundAccountService.getFundCount (F:/dr/dr_server/src/api/services/FundAccountService.js:35:34)
+    at <anonymous>
+[2019-05-29 10:57:57.079] [ERROR] error - { TypeError: Cannot read property 'editFundCountAmount' of undefined
+    at ExpenseService.addExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:82:43)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-29 10:59:38.209] [ERROR] error - { TypeError: Cannot read property 'editFundCountAmount' of undefined
+    at ExpenseService.addExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:82:43)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-29 17:00:16.340] [ERROR] error - { ReferenceError: spread is not defined
+    at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:192:79)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-29 17:17:29.556] [ERROR] error - { ReferenceError: test2 is not defined
+    at ExpenseService.editExpense (F:/dr/dr_server/src/api/services/ExpenseService.js:184:26)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-05-29 17:26:12.350] [ERROR] error - ReferenceError: Sequelize is not defined
+    at editExpense (F:/dr/dr_server/src/api/controllers/ExpenseController.js:34:25)
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\dr\dr_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\dr\dr_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\dr\dr_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\dr\dr_server\node_modules\koa-compose\index.js:42:32)
+    at next (F:\dr\dr_server\node_modules\koa-compose\index.js:43:18)
+    at createGenerator (F:\dr\dr_server\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (F:\dr\dr_server\node_modules\co\index.js:65:19)
+    at F:\dr\dr_server\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at Object.co (F:\dr\dr_server\node_modules\co\index.js:50:10)
+    at Object.toPromise (F:\dr\dr_server\node_modules\co\index.js:118:63)
