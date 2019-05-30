@@ -10,7 +10,7 @@ module.exports.attributes = (DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-        
+
         userId: { // 用户ID
             type: DataTypes.INTEGER,
             allowNull: false
@@ -45,6 +45,10 @@ module.exports.attributes = (DataTypes) => {
         },
         amount: {
             type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        dateCycle: {
+            type: DataTypes.STRING,
             allowNull: false
         },
         memo: {
