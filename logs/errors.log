@@ -21796,3 +21796,438 @@ notNull Violation: amount cannot be null
 [2019-05-30 15:41:55.264] [ERROR] error - { ReferenceError: addIncome is not defined
     at IncomeService.edit (F:/dr/dr_server/src/api/services/IncomeService.js:139:31)
     at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-06-05 17:15:05.700] [ERROR] error - { SequelizeValidationError: notNull Violation: OutFundAccountId cannot be null,
+notNull Violation: InFundAccountId cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: OutFundAccountId cannot be null,\nnotNull Violation: InFundAccountId cannot be null',
+  errors: 
+   [ { message: 'OutFundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'OutFundAccountId',
+       value: null },
+     { message: 'InFundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'InFundAccountId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-05 17:15:51.435] [ERROR] error - { SequelizeValidationError: notNull Violation: OutFundAccountId cannot be null,
+notNull Violation: InFundAccountId cannot be null
+    at F:\dr\dr_server\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (F:\dr\dr_server\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (F:\dr\dr_server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:763:18)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: OutFundAccountId cannot be null,\nnotNull Violation: InFundAccountId cannot be null',
+  errors: 
+   [ { message: 'OutFundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'OutFundAccountId',
+       value: null },
+     { message: 'InFundAccountId cannot be null',
+       type: 'notNull Violation',
+       path: 'InFundAccountId',
+       value: null } ],
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-05 17:16:12.443] [ERROR] error - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1000,'','2019-06-05 17:16:12','2019-06-05 17:16:12')' at line 1
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1000,'','2019-06-05 17:16:12','2019-06-05 17:16:12')' at line 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `Transfer` (`id`,`userId`,`transferDate`,`outFundAccountId`,`inFundAccountId`,`isHandle`,`handleFee`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,\'2019-06-05 00:00:00\',22,24,false,,1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1000,'','2019-06-05 17:16:12','2019-06-05 17:16:12')' at line 1
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\')\' at line 1',
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `Transfer` (`id`,`userId`,`transferDate`,`outFundAccountId`,`inFundAccountId`,`isHandle`,`handleFee`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,\'2019-06-05 00:00:00\',22,24,false,,1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\');' },
+  sql: 'INSERT INTO `Transfer` (`id`,`userId`,`transferDate`,`outFundAccountId`,`inFundAccountId`,`isHandle`,`handleFee`,`amount`,`memo`,`createdAt`,`updatedAt`) VALUES (DEFAULT,1,\'2019-06-05 00:00:00\',22,24,false,,1000,\'\',\'2019-06-05 17:16:12\',\'2019-06-05 17:16:12\');',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-05 17:18:09.602] [ERROR] error - { ReferenceError: addtransfer is not defined
+    at TransferService.addTransfer (F:/dr/dr_server/src/api/services/TransferService.js:26:13)
+    at <anonymous> expose: false, statusCode: 500, status: 500 }
+[2019-06-05 17:29:54.857] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'Transfer.endDate\' in \'where clause\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-05 17:30:02.568] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'Transfer.endDate\' in \'where clause\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-05 17:30:24.848] [ERROR] error - { SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.formatError (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_BAD_FIELD_ERROR: Unknown column \'Transfer.endDate\' in \'where clause\'',
+  parent: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  original: 
+   { Error: ER_BAD_FIELD_ERROR: Unknown column 'Transfer.endDate' in 'where clause'
+    at Query.Sequence._packetToError (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:180:13)
+    at addChunk (_stream_readable.js:274:12)
+    at readableAddChunk (_stream_readable.js:261:11)
+    at Socket.Readable.push (_stream_readable.js:218:10)
+    at TCP.onread (net.js:581:20)
+    --------------------
+    at Protocol._enqueue (F:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at Connection.query (F:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+    at F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at Query.run (F:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+    at F:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+    at Promise._execute (F:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+    at retryAsPromised (F:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+    at F:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+    at tryCatcher (F:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (F:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlMessage: 'Unknown column \'Transfer.endDate\' in \'where clause\'',
+     sqlState: '42S22',
+     index: 0,
+     sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));' },
+  sql: 'SELECT `id`, `userId`, `transferDate`, `outFundAccountId`, `inFundAccountId`, `isHandle`, `handleFee`, `amount`, `memo`, `createdAt`, `updatedAt`, `deletedAt` FROM `Transfer` AS `Transfer` WHERE (`Transfer`.`deletedAt` IS NULL AND (`Transfer`.`endDate` >= \'2019-06-01\' AND `Transfer`.`endDate` <= \'2019-06-30\'));',
+  expose: false,
+  statusCode: 500,
+  status: 500 }

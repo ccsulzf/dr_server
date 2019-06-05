@@ -4,3 +4,4 @@ export * from './BaseDataService';
 export * from './ExpenseService';
 export * from './IncomeService';
 export * from './FundAccountService';
+export * from './TransferService';
