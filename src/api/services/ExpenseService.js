@@ -1,3 +1,6 @@
+import {
+    FundAccountService
+} from './FundAccountService';
 import moment from 'moment';
 import * as _ from 'lodash';
 export class ExpenseService {
@@ -74,43 +77,9 @@ export class ExpenseService {
             });
             const expenseDetail = expenseDetailData.dataValues;
 
-            // 处理付款账户
-            const fundAccount = await FundAccount.find({
-                where: {
-                    id: data.expenseDetail.fundAccountId
-                },
-                raw: true,
-                nest: true
-            });
+            const fundAccountService = new FundAccountService(this.transaction);
 
-            fundAccount.balance = (fundAccount.balance * 100 - data.expenseDetail.amount * 100) / 100;
-            await FundAccount.update({
-                balance: fundAccount.balance
-            }, {
-                where: {
-                    id: fundAccount.id
-                },
-                transaction: this.transaction
-            });
-            // 如果是信贷用户
-            if (fundAccount.isCredit == 1) {
-                const creditAccount = await CreditAccount.find({
-                    where: {
-                        fundAccountId: fundAccount.id
-                    },
-                    raw: true,
-                    nest: true
-                });
-                creditAccount.usedAmount = (creditAccount.usedAmount * 100 + data.expenseDetail.amount * 100) / 100;
-                await CreditAccount.update({
-                    usedAmount: creditAccount.usedAmount
-                }, {
-                    where: {
-                        id: creditAccount.id
-                    },
-                    transaction: this.transaction
-                });
-            }
+            await fundAccountService.editFundCountAmount(data.expenseDetail.fundAccountId, 'cut', data.expenseDetail.amount)
 
             if (data.labelList && data.labelList.length) {
                 let expenseDetailLabelList = [];
@@ -154,6 +123,8 @@ export class ExpenseService {
 
     async editExpense(data) {
         try {
+
+            let expense;
             const prevExpenseDetail = await ExpenseDetail.find({
                 where: {
                     id: data.expenseDetail.id
@@ -163,6 +134,15 @@ export class ExpenseService {
             });
 
             const spread = (prevExpenseDetail.amount * 100 - data.expenseDetail.amount * 100) / 100;
+
+            const fundAccountService = new FundAccountService(this.transaction);
+
+            if (prevExpenseDetail.fundAccountId == data.expenseDetail.fundAccountId) {
+                await fundAccountService.editFundCountAmount(prevExpenseDetail.fundAccountId, 'plus', spread);
+            } else {
+                await fundAccountService.editFundCountAmount(prevExpenseDetail.fundAccountId, 'plus', prevExpenseDetail.amount);
+                await fundAccountService.editFundCountAmount(data.expenseDetail.fundAccountId, 'cut', data.expenseDetail.amount);
+            }
 
             const oldExpense = await Expense.find({
                 where: {
@@ -176,6 +156,7 @@ export class ExpenseService {
 
             if (oldExpense.expenseBookId === data.expense.expenseBookId &&
                 oldExpense.expenseDate === data.expense.expenseDate) {
+                expense = oldExpense;
                 // 如果什么都相等,直接更新就好了
                 data.expense.totalAmount = (data.expense.totalAmount * 100 - (spread * 100)) / 100;
                 await Expense.update(data.expense, {
@@ -229,6 +210,7 @@ export class ExpenseService {
                         },
                         transaction: this.transaction,
                     });
+                    expense = findExpense;
                     data.expenseDetail.expenseId = findExpense.id;
                 } else {
                     // 新增
@@ -240,6 +222,7 @@ export class ExpenseService {
                     });
                     const createExpense = expenseData.dataValues;
                     data.expenseDetail.expenseId = createExpense.id;
+                    expense = createExpense;
                 }
             }
 
@@ -250,177 +233,52 @@ export class ExpenseService {
                 transaction: this.transaction,
             });
 
-            const nowfundAccount = await FundAccount.find({
+            let expenseDetailLabelList = [];
+            for (let item of data.labelList) {
+                expenseDetailLabelList.push({
+                    labelId: item.id,
+                    expenseDetailId: data.expenseDetail.id
+                });
+            }
+
+            await ExpenseDetailLabel.destroy({
                 where: {
-                    id: data.expenseDetail.fundAccountId
+                    expenseDetailId: prevExpenseDetail.id
                 },
+                transaction: this.transaction,
+                force: true
+            });
+
+            await ExpenseDetailLabel.bulkCreate(expenseDetailLabelList, {
+                transaction: this.transaction,
                 raw: true,
                 nest: true
             });
 
-            const prevFundAccount = await FundAccount.find({
+            let expenseDetailParticipantList = [];
+            for (let item of data.participantList) {
+                expenseDetailParticipantList.push({
+                    participantId: item.id,
+                    expenseDetailId: data.expenseDetail.id
+                });
+            }
+
+            await ExpenseDetailParticipant.destroy({
                 where: {
-                    id: prevExpenseDetail.fundAccountId
+                    expenseDetailId: prevExpenseDetail.id
                 },
+                transaction: this.transaction,
+                force: true
+            });
+
+            await ExpenseDetailParticipant.bulkCreate(expenseDetailParticipantList, {
+                transaction: this.transaction,
                 raw: true,
                 nest: true
             });
-
-            // 对账户进行改变
-            if (nowfundAccount.id == prevFundAccount.id) {
-                // 如果账户没有改变
-                nowfundAccount.balance = (nowfundAccount.balance * 100 + (spread * 100)) / 100;
-
-                await FundAccount.update({
-                    balance: nowfundAccount.balance
-                }, {
-                    where: {
-                        id: nowfundAccount.id
-                    },
-                    raw: true,
-                    nest: true,
-                    transaction: this.transaction
-                });
-
-                if (nowfundAccount.isCredit == 1) {
-                    const creditAccount = await CreditAccount.find({
-                        where: {
-                            fundAccountId: nowfundAccount.id
-                        },
-                        raw: true,
-                        nest: true
-                    });
-
-                    creditAccount.usedAmount = (creditAccount.usedAmount * 100 - (spread * 100)) / 100;
-                    await CreditAccount.update({
-                        usedAmount: creditAccount.usedAmount
-                    }, {
-                        where: {
-                            id: creditAccount.id
-                        },
-                        transaction: this.transaction
-                    });
-                }
-            } else {
-                // 如果改变了,则先平掉之前的,再改变新的
-                prevFundAccount.balance = (prevFundAccount.balance * 100 + (prevExpenseDetail.amount * 100)) / 100;
-                await FundAccount.update({
-                    balance: prevFundAccount.balance
-                }, {
-                    where: {
-                        id: prevFundAccount.id
-                    },
-                    raw: true,
-                    nest: true,
-                    transaction: this.transaction
-                });
-
-                if (prevFundAccount.isCredit == 1) {
-                    const creditAccount = await CreditAccount.find({
-                        where: {
-                            fundAccountId: prevFundAccount.id
-                        },
-                        raw: true,
-                        nest: true
-                    });
-                    creditAccount.usedAmount = (creditAccount.usedAmount * 100 + (prevExpenseDetail.amount * 100)) / 100;
-
-                    await CreditAccount.update({
-                        usedAmount: creditAccount.usedAmount
-                    }, {
-                        where: {
-                            id: creditAccount.id
-                        },
-                        transaction: this.transaction
-                    });
-                }
-
-
-                nowfundAccount.balance = (nowfundAccount.balance * 100 - (data.expenseDetail.amount * 100)) / 100;
-
-                await FundAccount.update({
-                    balance: nowfundAccount.balance
-                }, {
-                    where: {
-                        id: nowfundAccount.id
-                    },
-                    raw: true,
-                    nest: true,
-                    transaction: this.transaction
-                });
-
-                if (nowfundAccount.isCredit == 1) {
-                    const creditAccount = await CreditAccount.find({
-                        where: {
-                            fundAccountId: nowfundAccount.id
-                        },
-                        raw: true,
-                        nest: true
-                    });
-                    creditAccount.usedAmount = (creditAccount.usedAmount * 100 - (data.expenseDetail.amount * 100)) / 100;
-
-                    await CreditAccount.update({
-                        usedAmount: creditAccount.usedAmount
-                    }, {
-                        where: {
-                            id: creditAccount.id
-                        },
-                        transaction: this.transaction
-                    });
-                }
-
-            }
-
-            if (data.labelList && data.labelList.length) {
-                let expenseDetailLabelList = [];
-                for (let item of data.labelList) {
-                    expenseDetailLabelList.push({
-                        labelId: item.id,
-                        expenseDetailId: data.expenseDetail.id
-                    });
-                }
-
-                await ExpenseDetailLabel.destroy({
-                    where: {
-                        expenseDetailId: prevExpenseDetail.id
-                    },
-                    transaction: this.transaction,
-                    force: true
-                });
-
-                await ExpenseDetailLabel.bulkCreate(expenseDetailLabelList, {
-                    transaction: this.transaction,
-                    raw: true,
-                    nest: true
-                });
-            }
-
-
-            if (data.participantList && data.participantList.length) {
-                let expenseDetailParticipantList = [];
-                for (let item of data.participantList) {
-                    expenseDetailParticipantList.push({
-                        participantId: item.id,
-                        expenseDetailId: data.expenseDetail.id
-                    });
-                }
-
-                await ExpenseDetailParticipant.destroy({
-                    where: {
-                        expenseDetailId: prevExpenseDetail.id
-                    },
-                    transaction: this.transaction,
-                    force: true
-                });
-
-                await ExpenseDetailParticipant.bulkCreate(expenseDetailParticipantList, {
-                    transaction: this.transaction,
-                    raw: true,
-                    nest: true
-                });
-            }
-
-            return prevExpenseDetail;
+            return {
+                expense: expense
+            };
         } catch (error) {
             throw error;
         }
@@ -436,7 +294,6 @@ export class ExpenseService {
                 raw: true,
                 nest: true
             });
-
             const expense = await Expense.find({
                 where: {
                     id: expenseDetail.expenseId
@@ -472,7 +329,6 @@ export class ExpenseService {
                 force: true
             });
 
-
             // 处理支出,如果只有一条,则也删除expense,否则就更新
             const spread = (expense.totalAmount * 100 - expenseDetail.amount * 100) / 100;
             if (spread === 0) {
@@ -500,6 +356,9 @@ export class ExpenseService {
                 }
             });
 
+            // FundAccount balance+
+            // CreditAccount usedAmount-
+
             fundAccount.balance = (fundAccount.balance * 100 + expenseDetail.amount * 100) / 100;
 
             await FundAccount.update({
@@ -511,7 +370,7 @@ export class ExpenseService {
                 transaction: this.transaction
             })
 
-            if (fundAccount.isCredit != 0) {
+            if (fundAccount.isCredit) {
                 const creditAccount = await CreditAccount.find({
                     where: {
                         fundAccountId: fundAccount.id

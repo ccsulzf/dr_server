@@ -30,7 +30,7 @@ export async function addExpense(ctx, next) {
 
 // 编辑支出
 export async function editExpense(ctx, next) {
-    let transaction = await db.sequelize.transaction();
+    let transaction = await db.sequelize.transaction({});
     try {
         const data = ctx.request.body;
         let expenseService = new ExpenseService(transaction);

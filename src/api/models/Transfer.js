@@ -10,48 +10,35 @@ module.exports.attributes = (DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
-
         userId: { // 用户ID
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        incomeCategoryId: { // 支出类型ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        addressId: { // 地点ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundPartyId: { //资金来往方ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundChannelId: { // 资金来往方式ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        fundAccountId: { // 资金账户ID
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        startDate: {
+        transferDate: { // 转账日期
             type: DataTypes.DATE,
             allowNull: false
         },
-        endDate: {
-            type: DataTypes.DATE,
+        outFundAccountId: { // 转出账户
+            type: DataTypes.INTEGER,
             allowNull: false
         },
-        amount: {
+        inFundAccountId: { // 转入账户
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        isHandle: { // 是否需要手续费
+            type: DataTypes.BOOLEAN,
+            allowNull: false
+        },
+        handleFee: { // 手续费多少
             type: DataTypes.FLOAT,
             allowNull: false
         },
-        dateCycle: {
-            type: DataTypes.STRING,
+        amount: { //转账金额
+            type: DataTypes.FLOAT,
             allowNull: false
         },
-        memo: {
+        memo: { //备注
             type: DataTypes.STRING,
             allowNull: true
         }
