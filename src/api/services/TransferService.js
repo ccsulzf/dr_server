@@ -31,7 +31,6 @@ export class TransferService {
             let transfer = data.transfer;
             let labelList = data.labelList;
 
-
             const fundAccountService = new FundAccountService(this.transaction);
             await fundAccountService.editFundCountAmount(transfer.outFundAccountId, 'cut', transfer.amount);
             await fundAccountService.editFundCountAmount(transfer.inFundAccountId, 'plus', transfer.amount);
@@ -60,6 +59,40 @@ export class TransferService {
                 });
             }
             return transfer;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+
+    async editTransfer(data) {
+        try {
+            let transfer = data.transfer;
+            let labelList = data.labelList;
+            let new_outAccountId = transfer.outFundAccountId;
+            let new_inAccountId = transfer.inFundAccountId;
+
+            let oldTransfer = await Transfer.find({
+                where: {
+                    id: transfer.id
+                }
+            });
+
+            let old_outAccountId = oldTransfer.outFundAccountId;
+            let old_inAccountId = oldTransfer.inFundAccountId;
+
+            // out 就是去减
+            if (old_outAccountId === new_outAccountId) {
+09
+                if (old_inAccountId === new_inAccountId) {
+
+                } else {
+
+                }
+            } else {
+
+            }
+
         } catch (error) {
             throw error;
         }

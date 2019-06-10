@@ -15,7 +15,7 @@ module.exports.attributes = (DataTypes) => {
             allowNull: false
         },
         transferDate: { // 转账日期
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false
         },
         outFundAccountId: { // 转出账户
