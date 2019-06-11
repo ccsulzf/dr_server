@@ -1,5 +1,6 @@
 import {
-    UserService
+    UserService,
+    TestService
 } from '../services';
 
 export async function login(ctx, next) {
@@ -7,3 +8,4 @@ export async function login(ctx, next) {
     let password = ctx.request.body.password;
     ctx.body = await new UserService().login(nameOrEmali, password);
 }
+

@@ -23,7 +23,7 @@ export async function editTransfer(ctx, next) {
         let transferService = new TransferService(transaction);
         const transfer = await transferService.editTransfer(data);
         await transaction.commit();
-        ctx.body = transfer;
+        ctx.body = true;
     } catch (error) {
         await transaction.rollback();
         ctx.throw(error);

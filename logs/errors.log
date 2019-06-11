@@ -22525,3 +22525,380 @@ notNull Violation: InFundAccountId cannot be null
   expose: false,
   statusCode: 500,
   status: 500 }
+[2019-06-11 22:13:45.832] [ERROR] error - { ReferenceError: transfer is not defined
+    at TransferService.editTransfer (I:/dr/dr_server/src/api/services/TransferService.js:113:25) expose: false, statusCode: 500, status: 500 }
+[2019-06-11 22:15:27.006] [ERROR] error - { SequelizeDatabaseError: ER_EMPTY_QUERY: Query was empty
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_EMPTY_QUERY: Query was empty',
+  parent:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  original:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  sql: '',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-11 22:16:37.365] [ERROR] error - { Error: Missing where attribute in the options parameter passed to update.
+    at Model.update (I:\dr\dr_server\node_modules\sequelize\lib\model.js:2436:11)
+    at TransferService.editTransfer (I:/dr/dr_server/src/api/services/TransferService.js:102:28) expose: false, statusCode: 500, status: 500 }
+[2019-06-11 22:24:56.961] [ERROR] error - { SequelizeDatabaseError: ER_EMPTY_QUERY: Query was empty
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_EMPTY_QUERY: Query was empty',
+  parent:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  original:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  sql: '',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-11 22:26:49.196] [ERROR] error - { SequelizeDatabaseError: ER_EMPTY_QUERY: Query was empty
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_EMPTY_QUERY: Query was empty',
+  parent:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  original:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  sql: '',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-11 22:30:04.886] [ERROR] error - { SequelizeDatabaseError: ER_EMPTY_QUERY: Query was empty
+    at Query.formatError (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:90:8)
+    at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_EMPTY_QUERY: Query was empty',
+  parent:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  original:
+   { Error: ER_EMPTY_QUERY: Query was empty
+       at Query.Sequence._packetToError (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+       at Query.ErrorPacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+       at Protocol._parsePacket (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+       at Parser.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+       at Protocol.write (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:103:28)
+       at Socket.emit (events.js:189:13)
+       at addChunk (_stream_readable.js:284:12)
+       at readableAddChunk (_stream_readable.js:265:11)
+       at Socket.Readable.push (_stream_readable.js:220:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+       --------------------
+       at Protocol._enqueue (I:\dr\dr_server\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+       at Connection.query (I:\dr\dr_server\node_modules\mysql\lib\Connection.js:208:25)
+       at I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at Query.run (I:\dr\dr_server\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:849:20
+       at I:\dr\dr_server\node_modules\retry-as-promised\index.js:39:21
+       at Promise._execute (I:\dr\dr_server\node_modules\bluebird\js\release\debuggability.js:303:9)
+       at Promise._resolveFromExecutor (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:483:18)
+       at new Promise (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:79:10)
+       at retryAsPromised (I:\dr\dr_server\node_modules\retry-as-promised\index.js:29:10)
+       at I:\dr\dr_server\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (I:\dr\dr_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (I:\dr\dr_server\node_modules\bluebird\js\release\promise.js:512:31)
+     code: 'ER_EMPTY_QUERY',
+     errno: 1065,
+     sqlMessage: 'Query was empty',
+     sqlState: '42000',
+     index: 0,
+     sql: '' },
+  sql: '',
+  expose: false,
+  statusCode: 500,
+  status: 500 }
+[2019-06-11 22:32:33.030] [ERROR] error - { Error: 123
+    at TransferService.editTransfer (I:/dr/dr_server/src/api/services/TransferService.js:127:19) expose: false, statusCode: 500, status: 500 }
+[2019-06-11 22:36:58.783] [ERROR] error - { Error: 123
+    at TransferService.editTransfer (I:/dr/dr_server/src/api/services/TransferService.js:127:19) expose: false, statusCode: 500, status: 500 }

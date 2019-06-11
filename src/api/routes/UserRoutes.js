@@ -2,5 +2,5 @@ module.exports = {
 	/**
 	 * 
 	 */
-	'POST /login': "UserController.login",
+	'POST /login': "UserController.login"
 };

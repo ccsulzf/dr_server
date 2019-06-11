@@ -32,7 +32,10 @@ export class TransferService {
             let labelList = data.labelList;
 
             const fundAccountService = new FundAccountService(this.transaction);
-            await fundAccountService.editFundCountAmount(transfer.outFundAccountId, 'cut', transfer.amount);
+
+            let outAmount = (transfer.amount * 100 + transfer.handleFee * 100) / 100;
+            await fundAccountService.editFundCountAmount(transfer.outFundAccountId, 'cut', outAmount);
+
             await fundAccountService.editFundCountAmount(transfer.inFundAccountId, 'plus', transfer.amount);
 
             const transferData = await Transfer.create(transfer, {
@@ -64,13 +67,33 @@ export class TransferService {
         }
     }
 
-
     async editTransfer(data) {
+        let transfer = data.transfer;
+        let labelList = data.labelList;
+        let oldTransfer = await Transfer.find({
+            where: {
+                id: transfer.id
+            },
+            raw: true,
+            next: true
+        });
+        let old_out_account = await FundAccount.find({
+            where: {
+                id: oldTransfer.outFundAccountId
+            },
+            raw: true,
+            next: true
+        });
+        let old_in_account = await FundAccount.find({
+            where: {
+                id: oldTransfer.inFundAccountId
+            },
+            raw: true,
+            next: true
+        });
         try {
-            let transfer = data.transfer;
-            let labelList = data.labelList;
-            let new_outAccountId = transfer.outFundAccountId;
-            let new_inAccountId = transfer.inFundAccountId;
+            let newOutAccountId = transfer.outFundAccountId;
+            let newInAccountId = transfer.inFundAccountId;
 
             let oldTransfer = await Transfer.find({
                 where: {
@@ -78,23 +101,43 @@ export class TransferService {
                 }
             });
 
-            let old_outAccountId = oldTransfer.outFundAccountId;
-            let old_inAccountId = oldTransfer.inFundAccountId;
+            let oldOutAccountId = oldTransfer.outFundAccountId;
+            let oldInAccountId = oldTransfer.inFundAccountId;
 
-            // out 就是去减
-            if (old_outAccountId === new_outAccountId) {
-09
-                if (old_inAccountId === new_inAccountId) {
+            const fundAccountService = new FundAccountService();
 
-                } else {
+            //  手续费和转账金额退给以前的转出账户（以前的转出账户要加上转账金额+手续费）
+            let oldReturnAmount = (oldTransfer.amount * 100 + oldTransfer.handleFee * 100) / 100;
+            await fundAccountService.editFundCountAmount(oldOutAccountId, 'plus', oldReturnAmount);
+            // 以前的转入账户要减去转账金额
+            await fundAccountService.editFundCountAmount(oldInAccountId, 'cut', oldTransfer.amount);
+            // 新的转出账户减去手续费和余额
 
-                }
-            } else {
+            let newOutAmount = (transfer.amount * 100 + transfer.handleFee * 100) / 100;
+            await fundAccountService.editFundCountAmount(newOutAccountId, 'cut', newOutAmount);
 
-            }
+            await fundAccountService.editFundCountAmount(newInAccountId, 'plus', transfer.amount);
 
+            await Transfer.update(transfer, {
+                where: {
+                    id: transfer.id
+                },
+                transaction: this.transaction
+            });
         } catch (error) {
+            // 账户没有事务了，如果错了，只能手动还原
+            await FundAccount.update(old_out_account, {
+                where: {
+                    id: old_out_account.id
+                }
+            });
+            await FundAccount.update(old_in_account, {
+                where: {
+                    id: old_in_account.id
+                }
+            });
             throw error;
         }
     }
+
 }
