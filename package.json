@@ -1,5 +1,5 @@
 {
-  "name": "dailyrecord",
+  "name": "DailyRecord",
   "version": "3.5.0",
   "description": "A Web App like Ruby on Rails with Koa2, ES6 and Sequelize.",
   "main": "index.js",

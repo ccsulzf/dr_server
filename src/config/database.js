@@ -2,7 +2,7 @@ module.exports = {
     development: {
 		username: process.env.DATABASE_USERNAME_DEV || 'root',
 		password: process.env.DATABASE_PASSWORD_DEV || '123456',
-		database: process.env.DATABASE_NAME_DEV || 'dr-test',
+		database: process.env.DATABASE_NAME_DEV || 'dr',
 		host: process.env.DATABASE_HOST_DEV || 'localhost',
         dialect: 'mysql',
         timezone: '+08:00',

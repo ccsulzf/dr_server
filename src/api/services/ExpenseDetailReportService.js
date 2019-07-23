@@ -107,6 +107,9 @@ export class ExpenseDetailReportService {
 
     _bindDate(dateTime) {
         let timeSql = '';
+        dateTime.start = new Date(dateTime.start);
+        dateTime.end = new Date(dateTime.end);
+
         if (dateTime.type === 'day') {
             timeSql = ' e.expenseDate >= \'' + moment(dateTime.start).format('YYYY-MM-DD') + '\' AND e.expenseDate <= \'' + moment(dateTime.end).format('YYYY-MM-DD') + '\'';
         } else if (dateTime.type === 'month') {

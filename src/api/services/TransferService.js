@@ -124,6 +124,30 @@ export class TransferService {
                 },
                 transaction: this.transaction
             });
+            await TransferLabel.destroy({
+                where: {
+                    transferId: transfer.id
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+            if (labelList.length) {
+                const labelIds = _.map(labelList, 'id');
+                const transferLabelList = [];
+                for (const labelId of labelIds) {
+                    transferLabelList.push({
+                        transferId: income.id,
+                        labelId: labelId
+                    });
+                }
+                await TransferLabel.bulkCreate(transferLabelList, {
+                    transaction: this.transaction,
+                    raw: true,
+                    nest: true
+                });
+            }
+
         } catch (error) {
             // 账户没有事务了，如果错了，只能手动还原
             await FundAccount.update(old_out_account, {
@@ -136,6 +160,34 @@ export class TransferService {
                     id: old_in_account.id
                 }
             });
+            throw error;
+        }
+    }
+
+    async delTransfer(transfer) {
+        try {
+            const fundAccountService = new FundAccountService(this.transaction);
+            let outAmount = (transfer.amount * 100 + transfer.handleFee * 100) / 100;
+            await fundAccountService.editFundCountAmount(transfer.outFundAccountId, 'plus', outAmount);
+
+            await fundAccountService.editFundCountAmount(transfer.inFundAccountId, 'cut', transfer.amount);
+
+            await TransferLabel.destroy({
+                where: {
+                    transferId: transfer.id
+                },
+                transaction: this.transaction,
+                force: true
+            });
+
+            await Transfer.destroy({
+                where: {
+                    id: transfer.id
+                },
+                transaction: this.transaction,
+                force: true
+            })
+        } catch (error) {
             throw error;
         }
     }

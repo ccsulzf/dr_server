@@ -30,6 +30,20 @@ export async function editTransfer(ctx, next) {
     }
 }
 
+export async function delTransfer(ctx, next) {
+    let transaction = await db.sequelize.transaction();
+    try {
+        const transfer = ctx.request.body;
+        let transferService = new TransferService(transaction);
+        await transferService.delTransfer(transfer);
+        await transaction.commit();
+        ctx.body = true;
+    } catch (error) {
+        await transaction.rollback();
+        ctx.throw(error);
+    }
+}
+
 
 export async function getTransferList(ctx, next) {
     try {
